@@ -1,4 +1,4 @@
-package com.hjq.latte.app;
+package com.jqhee.latte.core.app;
 
 public enum ConfigKeys {
     API_HOST,               // 配置网络请求域名

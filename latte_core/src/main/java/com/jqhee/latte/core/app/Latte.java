@@ -1,4 +1,4 @@
-package com.hjq.latte.app;
+package com.jqhee.latte.core.app;
 
 import android.content.Context;
 
@@ -9,8 +9,8 @@ public class Latte {
      * @param  context
      */
     public  static Configurator init(Context context) {
-        getConfigurator().getLatteConfigs().put(ConfigKeys.APPLICATION_CONTEXT, context.getApplicationContext());
-        getConfigurator().getLatteConfigs().put(ConfigKeys.APPLICATION, context);
+        getConfigurator().getLatteConfigs().put(ConfigKeys.APPLICATION_CONTEXT.name(), context.getApplicationContext());
+        getConfigurator().getLatteConfigs().put(ConfigKeys.APPLICATION.name(), context);
         return Configurator.getInstance();
     }
 

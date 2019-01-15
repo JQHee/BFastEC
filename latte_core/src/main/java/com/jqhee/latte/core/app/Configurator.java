@@ -1,4 +1,4 @@
-package com.hjq.latte.app;
+package com.jqhee.latte.core.app;
 
 import java.util.HashMap;
 

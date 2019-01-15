@@ -2,7 +2,7 @@ package com.jqhee.bfastec.example;
 
 import android.app.Application;
 
-import com.hjq.latte.app.Latte;
+import com.jqhee.latte.core.app.Latte;
 
 public class ExampleApp  extends Application {
 

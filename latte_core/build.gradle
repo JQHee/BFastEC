@@ -61,7 +61,7 @@ configurations.all {
         if (requested.group == 'com.android.support') {
             if (!requested.name.startsWith("multidex")) {
                 //这里写你想统一的版本是多少，前提是你sdk里有
-                details.useVersion '25.0.0'
+                details.useVersion '27.0.0'
             }
         }
     }

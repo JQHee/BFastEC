@@ -44,6 +44,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // 特别注意 使用是compile 不是implementation
     compile project(':latte_annotations')
+
+
+    //Fragment依赖
+    compile 'me.yokeyword:fragmentation:1.3.4'
+    compile 'me.yokeyword:fragmentation-swipeback:1.3.4'
+    //butterknife依赖
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 }
 
 /*

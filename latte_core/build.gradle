@@ -68,6 +68,11 @@ dependencies {
     compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
     // JSON依赖Android版(https://github.com/alibaba/fastjson)
     compile 'com.alibaba:fastjson:1.2.29'
+
+    // 数据库依赖
+    compile 'org.greenrobot:greendao:3.2.2'
+    // Log打印
+    compile 'com.orhanobut:logger:2.2.0'
 }
 
 // 开源： http://www.jcodecraeer.com

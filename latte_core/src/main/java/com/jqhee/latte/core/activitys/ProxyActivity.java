@@ -21,10 +21,13 @@ public abstract class ProxyActivity extends SupportActivity {
     }
 
     private void initContainer(@Nullable Bundle savedInstanceState) {
-        final ContentFrameLayout layout = new ContentFrameLayout(this);
-        layout.setId(R.id.delegatte_container);
+        final ContentFrameLayout container = new ContentFrameLayout(this);
+        container.setId(R.id.delegate_container);
+        setContentView(container);
+        //第一次加载时
         if (savedInstanceState == null) {
-            loadRootFragment(R.id.delegatte_container, setRootDelegate());
+            //加载根Fragment, 即Activity内的第一个Fragment
+            loadRootFragment(R.id.delegate_container, setRootDelegate());
         }
     }
 

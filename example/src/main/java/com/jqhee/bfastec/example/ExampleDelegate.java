@@ -8,7 +8,7 @@ import com.jqhee.latte.core.delegates.LatteDelegate;
 
 public class ExampleDelegate extends LatteDelegate {
     @Override
-    public Object setupLayout() {
+    public Object setLayout() {
         return R.layout.delegate_example;
     }
 

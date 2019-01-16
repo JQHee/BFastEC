@@ -6,7 +6,6 @@
 
     <application
         android:allowBackup="true"
-        android:label="Latte"
         android:supportsRtl="true"
         />
 

@@ -66,6 +66,8 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.10.0'
     compile 'com.squareup.okio:okio:1.14.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    // JSON依赖Android版(https://github.com/alibaba/fastjson)
+    compile 'com.alibaba:fastjson:1.2.29'
 }
 
 // 开源： http://www.jcodecraeer.com

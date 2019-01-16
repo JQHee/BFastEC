@@ -1,4 +1,5 @@
 package com.jqhee.latte.core.activitys;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
@@ -21,7 +22,7 @@ public abstract class ProxyActivity extends SupportActivity {
     }
 
     private void initContainer(@Nullable Bundle savedInstanceState) {
-        final ContentFrameLayout container = new ContentFrameLayout(this);
+        @SuppressLint("RestrictedApi") final ContentFrameLayout container = new ContentFrameLayout(this);
         container.setId(R.id.delegate_container);
         setContentView(container);
         //第一次加载时

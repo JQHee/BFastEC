@@ -20,7 +20,7 @@ public class Configurator {
     }
 
     // 返回配置项
-    final HashMap<Object, Object> getLatteConfigs() {
+    final HashMap<Object, Object> getLatteConfigurations() {
         return LATTE_CONFIGS;
     }
 

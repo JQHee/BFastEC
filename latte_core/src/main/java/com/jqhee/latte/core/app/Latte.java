@@ -2,6 +2,8 @@ package com.jqhee.latte.core.app;
 
 import android.content.Context;
 
+import java.util.HashMap;
+
 public class Latte {
 
     /**
@@ -9,8 +11,8 @@ public class Latte {
      * @param  context
      */
     public  static Configurator init(Context context) {
-        getConfigurator().getLatteConfigs().put(ConfigKeys.APPLICATION_CONTEXT.name(), context.getApplicationContext());
-        getConfigurator().getLatteConfigs().put(ConfigKeys.APPLICATION.name(), context);
+        getConfigurator().getLatteConfigurations().put(ConfigKeys.APPLICATION_CONTEXT.name(), context.getApplicationContext());
+        getConfigurator().getLatteConfigurations().put(ConfigKeys.APPLICATION.name(), context);
         return Configurator.getInstance();
     }
 
@@ -20,6 +22,10 @@ public class Latte {
 
     public static  <T> T getConfiguration(Object key) {
         return  getConfigurator().getConfiguration(key);
+    }
+
+    public static HashMap<Object, Object> getLatteConfigurations() {
+        return getConfigurator().getLatteConfigurations();
     }
 
     // 全局的Context

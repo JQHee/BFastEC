@@ -33,6 +33,10 @@ public class RestRequestCallbacks implements Callback<String> {
 
             }
         }
+        // 请求结束
+        if (IREQUEST != null) {
+            IREQUEST.onRequestEnd();
+        }
 
     }
 

@@ -1,5 +1,11 @@
 package com.jqhee.latte.core.net.callback;
 
+import android.os.Handler;
+
+import com.jqhee.latte.core.ui.loader.LatteLoader;
+import com.jqhee.latte.core.ui.loader.LoaderStyle;
+
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -14,12 +20,17 @@ public class RestRequestCallbacks implements Callback<String> {
     private final ISuccess ISUCCESS;
     private final IFailure IFAILURE;
     private final IError IERROR;
+    private final LoaderStyle LOADERSTYLE;
+    // 延时隐藏 loader 指示器 static 声明 防止内存泄漏
+    private  static final Handler HANDLER = new Handler();
 
-    public RestRequestCallbacks(IRequest irequest, ISuccess isuccess, IFailure ifailure, IError ierror) {
+
+    public RestRequestCallbacks(IRequest irequest, ISuccess isuccess, IFailure ifailure, IError ierror, LoaderStyle loaderStyle) {
         IREQUEST = irequest;
         ISUCCESS = isuccess;
         IFAILURE = ifailure;
         IERROR = ierror;
+        LOADERSTYLE = loaderStyle;
     }
 
     @Override
@@ -40,6 +51,7 @@ public class RestRequestCallbacks implements Callback<String> {
         if (IREQUEST != null) {
             IREQUEST.onRequestEnd();
         }
+        stopLoader();
 
     }
 
@@ -52,6 +64,18 @@ public class RestRequestCallbacks implements Callback<String> {
         // http请求结束
         if (IREQUEST != null) {
             IREQUEST.onRequestEnd();
+        }
+        stopLoader();
+    }
+
+    private void stopLoader() {
+        if (LOADERSTYLE != null) {
+            HANDLER.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    LatteLoader.stopLoading();
+                }
+            }, 1000);
         }
     }
 }

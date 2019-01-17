@@ -1,15 +1,15 @@
 package com.jqhee.latte.core.net;
 
+import android.content.Context;
+
 import com.jqhee.latte.core.net.callback.IError;
 import com.jqhee.latte.core.net.callback.IFailure;
 import com.jqhee.latte.core.net.callback.IRequest;
 import com.jqhee.latte.core.net.callback.ISuccess;
+import com.jqhee.latte.core.ui.loader.LoaderStyle;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.WeakHashMap;
 
-import retrofit2.Call;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 
@@ -24,6 +24,9 @@ public class RestClientBuilder {
     private  IFailure mIFailure;
     private  IError mIError;
     private  RequestBody mBody;
+    private LoaderStyle mLoaderStyple;
+    // 为了创建 dialog
+    private  Context mContext;
 
     //  只允许 RestClientBuilder new
     RestClientBuilder() {
@@ -73,8 +76,14 @@ public class RestClientBuilder {
         return this;
     }
 
+    public final RestClientBuilder loader(Context context) {
+        this.mContext = context;
+        this.mLoaderStyple = LoaderStyle.BallClipRotatePulseIndicator;
+        return this;
+    }
+
     // RestClient 发起网络请求参数配置
     public final RestClient builder() {
-        return  new RestClient(mUrl, PARAMS, mIRequest, mISuccess, mIFailure, mIError, mBody);
+        return  new RestClient(mUrl, PARAMS, mIRequest, mISuccess, mIFailure, mIError, mBody, mLoaderStyple, mContext);
     }
 }

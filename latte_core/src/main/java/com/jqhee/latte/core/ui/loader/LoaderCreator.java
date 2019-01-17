@@ -29,9 +29,11 @@ public class LoaderCreator {
             return  null;
         }
         //通过反射获取包名如：com.wang.avi.indicators.BallPulseIndicator
+        // 字符串拼接，性能更高
         final StringBuilder drawableClassName = new StringBuilder();
         //说明传入的是类名
         if (!name.equals(".")) {
+            // 拼接完整的包名
             final String defaultPackageName = AVLoadingIndicatorView.class.getPackage().getName();
             drawableClassName.append(defaultPackageName)
                     .append(".indicators")

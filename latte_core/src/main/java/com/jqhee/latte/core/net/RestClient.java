@@ -1,10 +1,14 @@
 package com.jqhee.latte.core.net;
 
+import android.content.Context;
+
 import com.jqhee.latte.core.net.callback.IError;
 import com.jqhee.latte.core.net.callback.IFailure;
 import com.jqhee.latte.core.net.callback.IRequest;
 import com.jqhee.latte.core.net.callback.ISuccess;
 import com.jqhee.latte.core.net.callback.RestRequestCallbacks;
+import com.jqhee.latte.core.ui.loader.LatteLoader;
+import com.jqhee.latte.core.ui.loader.LoaderStyle;
 
 import java.util.Map;
 import java.util.WeakHashMap;
@@ -12,7 +16,6 @@ import java.util.WeakHashMap;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
-import retrofit2.http.DELETE;
 
 public class RestClient {
 
@@ -23,6 +26,8 @@ public class RestClient {
     private final IFailure IFAILURE;
     private final IError IERROR;
     private final RequestBody BODY;
+    private final LoaderStyle LOADER_STYLE;
+    private final Context CONTEXT;
 
     public RestClient(String url,
                       Map<String, Object> params,
@@ -30,8 +35,12 @@ public class RestClient {
                       ISuccess isuccess,
                       IFailure ifailure,
                       IError ierror,
-                      RequestBody body) {
+                      RequestBody body,
+                      LoaderStyle loaderStyle,
+                      Context context) {
         URL = url;
+        LOADER_STYLE = loaderStyle;
+        CONTEXT = context;
         PARAMS.putAll(params);
         IREQUEST = irequest;
         ISUCCESS = isuccess;
@@ -53,6 +62,11 @@ public class RestClient {
         // 防止报空指针错误
         if (IREQUEST != null) {
             IREQUEST.onRequestStart();
+        }
+
+        // 显示加载指示器
+        if (LOADER_STYLE != null) {
+            LatteLoader.showLoading(CONTEXT, LOADER_STYLE);
         }
 
         switch (method) {
@@ -95,7 +109,8 @@ public class RestClient {
                 IREQUEST,
                 ISUCCESS,
                 IFAILURE,
-                IERROR
+                IERROR,
+                LOADER_STYLE
         );
     }
 

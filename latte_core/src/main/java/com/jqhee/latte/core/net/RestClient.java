@@ -10,12 +10,17 @@ import com.jqhee.latte.core.net.callback.RestRequestCallbacks;
 import com.jqhee.latte.core.ui.loader.LatteLoader;
 import com.jqhee.latte.core.ui.loader.LoaderStyle;
 
+import java.io.File;
 import java.util.Map;
 import java.util.WeakHashMap;
 
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
+import retrofit2.http.Multipart;
+import retrofit2.http.POST;
 
 public class RestClient {
 
@@ -26,6 +31,7 @@ public class RestClient {
     private final IFailure IFAILURE;
     private final IError IERROR;
     private final RequestBody BODY;
+    private final File FILE;
     private final LoaderStyle LOADER_STYLE;
     private final Context CONTEXT;
 
@@ -36,6 +42,7 @@ public class RestClient {
                       IFailure ifailure,
                       IError ierror,
                       RequestBody body,
+                      File file,
                       LoaderStyle loaderStyle,
                       Context context) {
         URL = url;
@@ -47,6 +54,7 @@ public class RestClient {
         IFAILURE = ifailure;
         IERROR = ierror;
         BODY = body;
+        FILE = file;
     }
 
     // 发起网络请求参数配置
@@ -77,16 +85,22 @@ public class RestClient {
                 call = service.post(URL, PARAMS);
                 break;
             case POST_RAW:
+                call = service.postRaw(URL, BODY);
                 break;
             case PUT:
                 call = service.put(URL, PARAMS);
                 break;
             case PUT_RAW:
-                call = service.delete(URL, PARAMS);
+                call = service.putRaw(URL, BODY);
                 break;
             case DELETE:
+                call = service.delete(URL, PARAMS);
                 break;
             case UPLOAD:
+                final RequestBody requestBody = RequestBody.create(MediaType.parse(MultipartBody.FORM.toString()), FILE);
+                // 表单的方式提交
+                final MultipartBody.Part body = MultipartBody.Part.createFormData("file", FILE.getName(), requestBody);
+                call = RestCreator.getRestService().upload(URL, body);
                 break;
             case DOWNLOAD:
                 break;
@@ -119,11 +133,28 @@ public class RestClient {
     }
 
     public final void post() {
-        request(HttpMethod.POST);
+        if (BODY != null) {
+            request(HttpMethod.POST_RAW);
+        } else {
+            if (!PARAMS.isEmpty()) {
+                throw  new RuntimeException("params is not be null");
+            }
+            request(HttpMethod.POST);
+        }
+
     }
 
     public final void put() {
-        request(HttpMethod.PUT);
+
+        if (BODY != null) {
+            request(HttpMethod.PUT_RAW);
+        } else {
+            if (!PARAMS.isEmpty()) {
+                throw  new RuntimeException("params is not be null");
+            }
+            request(HttpMethod.PUT);
+        }
+
     }
 
     public final void delete() {

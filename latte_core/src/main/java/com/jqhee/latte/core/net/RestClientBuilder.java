@@ -8,6 +8,7 @@ import com.jqhee.latte.core.net.callback.IRequest;
 import com.jqhee.latte.core.net.callback.ISuccess;
 import com.jqhee.latte.core.ui.loader.LoaderStyle;
 
+import java.io.File;
 import java.util.WeakHashMap;
 
 import okhttp3.MediaType;
@@ -17,16 +18,17 @@ public class RestClientBuilder {
 
     // 建造者模式
 
-    private  String mUrl;
+    private  String mUrl = null;
     private  static final WeakHashMap<String, Object> PARAMS = RestCreator.getParams();
-    private  IRequest mIRequest;
-    private  ISuccess mISuccess;
-    private  IFailure mIFailure;
-    private  IError mIError;
-    private  RequestBody mBody;
-    private LoaderStyle mLoaderStyple;
+    private  IRequest mIRequest = null;
+    private  ISuccess mISuccess = null;
+    private  IFailure mIFailure = null;
+    private  IError mIError = null;
+    private  RequestBody mBody = null;
+    private  File mFile = null;
+    private LoaderStyle mLoaderStyple = null;
     // 为了创建 dialog
-    private  Context mContext;
+    private  Context mContext = null;
 
     //  只允许 RestClientBuilder new
     RestClientBuilder() {
@@ -82,8 +84,18 @@ public class RestClientBuilder {
         return this;
     }
 
+    public final RestClientBuilder file(File file) {
+        this.mFile = file;
+        return this;
+    }
+
+    public final RestClientBuilder file(String filePath) {
+        this.mFile = new File(filePath);
+        return this;
+    }
+
     // RestClient 发起网络请求参数配置
     public final RestClient builder() {
-        return  new RestClient(mUrl, PARAMS, mIRequest, mISuccess, mIFailure, mIError, mBody, mLoaderStyple, mContext);
+        return  new RestClient(mUrl, PARAMS, mIRequest, mISuccess, mIFailure, mIError, mBody, mFile, mLoaderStyple, mContext);
     }
 }

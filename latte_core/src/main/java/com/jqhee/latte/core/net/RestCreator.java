@@ -46,7 +46,7 @@ public class RestCreator {
         // 网络请求超时时间
         private  static  final  int TIME_OUT = 60;
         // TimeUnit.SECONDS 以秒为单位
-        // okhttp可以添加拦截器
+        // okhttp可以添加拦截器 （可以用来设置请求的header）
         private  static  final OkHttpClient OK_HTTP_CLIENT = new OkHttpClient.Builder()
                 .connectTimeout(TIME_OUT, TimeUnit.SECONDS)
                 .build();

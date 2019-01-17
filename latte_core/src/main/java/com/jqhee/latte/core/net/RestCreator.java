@@ -14,6 +14,9 @@ public class RestCreator {
 
     // 惰性加载, 静态内部类
 
+    /**
+     * 网络请求参数params
+     */
     public  static WeakHashMap<String, Object> getParams() {
         return ParamsHolder.PARAMS;
     }
@@ -22,14 +25,13 @@ public class RestCreator {
         private static final WeakHashMap<String, Object> PARAMS = new WeakHashMap<>();
     }
 
-    public  static RestService getRestService() {
-        return RestServiceHolder.REST_SERVICE;
-    }
-
+    /**
+     *  Retrofit 对象创建
+     */
     private static final class RetrofitHolder {
         private  static  final  String BASE_URL = (String) Latte.getLatteConfigurations().get(ConfigKeys.API_HOST.name());
 
-        // 转换器 ScalarsConverterFactory.create()
+        // ScalarsConverterFactory.create() 添加 String类型[ Scalars (primitives, boxed, and String)] 转换器
         private  static  final Retrofit RETROFIT_CLIENT = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(OKHttpHolder.OK_HTTP_CLIENT)
@@ -37,6 +39,9 @@ public class RestCreator {
                 .build();
     }
 
+    /**
+     * OkHttpClient 对象创建
+     */
     private static final class OKHttpHolder {
         // 网络请求超时时间
         private  static  final  int TIME_OUT = 60;
@@ -46,6 +51,13 @@ public class RestCreator {
                 .connectTimeout(TIME_OUT, TimeUnit.SECONDS)
                 .build();
 
+    }
+
+    /**
+     * RestService 接口对象创建
+     */
+    public  static RestService getRestService() {
+        return RestServiceHolder.REST_SERVICE;
     }
 
     private static final class RestServiceHolder {

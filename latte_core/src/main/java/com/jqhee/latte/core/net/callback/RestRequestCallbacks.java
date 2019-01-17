@@ -4,6 +4,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Callback 特别注意为retrofit2中的接口
+ */
+
 public class RestRequestCallbacks implements Callback<String> {
 
     private final IRequest IREQUEST;
@@ -22,18 +26,17 @@ public class RestRequestCallbacks implements Callback<String> {
     public void onResponse(Call<String> call, Response<String> response) {
         if (response.isSuccessful()) { // 请求成功
             if (call.isExecuted()) {
+                // 判空，防止空指针异常
                 if (ISUCCESS != null) {
                     ISUCCESS.onSuccess(response.body());
-
                 }
             }
         } else {
             if (IERROR != null) {
                 IERROR.onError(response.code(), response.message());
-
             }
         }
-        // 请求结束
+        // http请求结束
         if (IREQUEST != null) {
             IREQUEST.onRequestEnd();
         }
@@ -46,7 +49,7 @@ public class RestRequestCallbacks implements Callback<String> {
             IFAILURE.onFailure();
         }
 
-        // 请求结束
+        // http请求结束
         if (IREQUEST != null) {
             IREQUEST.onRequestEnd();
         }

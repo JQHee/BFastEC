@@ -45,6 +45,9 @@ public class RestClientBuilder {
         return this;
     }
 
+    /**
+     * json 方式提交数据
+     */
     public final RestClientBuilder raw(String raw) {
         this.mBody = RequestBody.create(MediaType.parse("application/json;charset=UTF-8"), raw);
         return this;
@@ -70,9 +73,8 @@ public class RestClientBuilder {
         return this;
     }
 
+    // RestClient 发起网络请求参数配置
     public final RestClient builder() {
         return  new RestClient(mUrl, PARAMS, mIRequest, mISuccess, mIFailure, mIError, mBody);
     }
-
-
 }

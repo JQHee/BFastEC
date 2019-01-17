@@ -40,6 +40,7 @@ public class RestClient {
         BODY = body;
     }
 
+    // 发起网络请求参数配置
     public static RestClientBuilder builder() {
         return  new RestClientBuilder();
     }
@@ -88,6 +89,7 @@ public class RestClient {
 
     }
 
+    // 设置网络请求回调接口
     private Callback<String> getRequestCallback() {
         return  new RestRequestCallbacks(
                 IREQUEST,

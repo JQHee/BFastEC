@@ -17,6 +17,10 @@ import retrofit2.http.QueryMap;
 import retrofit2.http.Streaming;
 import retrofit2.http.Url;
 
+/**
+ * 网络http请求的相关接口
+ */
+
 public interface RestService {
 
 
@@ -34,7 +38,10 @@ public interface RestService {
     @DELETE
     Call<String> delete(@Url String url, @QueryMap Map<String, Object> params);
 
-    @Streaming // 变下在边写 （如果不使用@Streaming，则是现在内存中下载完成，在写入，会造成内存溢出, 使用@Streaming也需要开异步线程写入）
+    /**
+     * @Streaming边下在边写 （如果不使用@Streaming，则是现在内存中下载完成，在写入，会造成内存溢出, 使用@Streaming也需要开异步线程写入）
+     */
+    @Streaming
     @GET
     Call<ResponseBody> download(@Url String url, @QueryMap Map<String, Object> params);
 

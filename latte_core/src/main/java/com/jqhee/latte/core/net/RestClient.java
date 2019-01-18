@@ -124,13 +124,13 @@ public class RestClient {
                 for (Map.Entry<String, Object> entry: PARAMS.entrySet()
                      ) {
                     if (entry.getValue() instanceof File) {
-                        final RequestBody trequestBody = RequestBody.create(MediaType.parse(MultipartBody.FORM.toString()), ((File)entry.getValue()));
+                        final RequestBody tRequestBody = RequestBody.create(MediaType.parse(MultipartBody.FORM.toString()), ((File)entry.getValue()));
                         // 表单的方式提交
-                        final MultipartBody.Part tbody = MultipartBody.Part.createFormData(entry.getKey(), ((File)entry.getValue()).getName(), trequestBody);
-                        paramsMap.put(entry.getKey(), tbody);
+                        final MultipartBody.Part tBody = MultipartBody.Part.createFormData(entry.getKey(), ((File)entry.getValue()).getName(), tRequestBody);
+                        paramsMap.put(entry.getKey(), tBody);
                     } else {
-                        final MultipartBody.Part tbody = MultipartBody.Part.createFormData(entry.getKey(), entry.getKey());
-                        paramsMap.put(entry.getKey(), tbody);
+                        final MultipartBody.Part tBody = MultipartBody.Part.createFormData(entry.getKey(), entry.getKey());
+                        paramsMap.put(entry.getKey(), tBody);
                     }
                 }
                 call = service.upLoadFiles(URL, paramsMap);

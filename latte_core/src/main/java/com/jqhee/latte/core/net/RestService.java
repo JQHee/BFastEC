@@ -65,6 +65,4 @@ public interface RestService {
     @POST()
     Call<String> upLoadFiles(@Url String url, @PartMap Map<String, MultipartBody.Part> params);
 
-    // Observable<Response> uploadFiles(@Body MultipartTypedOutput multipartTypedOutput);
-
 }

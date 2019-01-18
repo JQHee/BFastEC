@@ -29,6 +29,7 @@ public class LatteLoader {
      * 显示加载提示
      */
     public static void showLoading(Context context, String type) {
+        // 使用AppCompatDialog弹出来
         final AppCompatDialog dialog = new AppCompatDialog(context, R.style.dialog);
         final AVLoadingIndicatorView avLoadingIndicatorView = LoaderCreator.create(type, context);
         dialog.setContentView(avLoadingIndicatorView);

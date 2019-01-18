@@ -3,9 +3,11 @@ package com.jqhee.latte.core.net;
 import com.jqhee.latte.core.app.ConfigKeys;
 import com.jqhee.latte.core.app.Latte;
 
+import java.util.ArrayList;
 import java.util.WeakHashMap;
 import java.util.concurrent.TimeUnit;
 
+import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
@@ -45,12 +47,23 @@ public class RestCreator {
     private static final class OKHttpHolder {
         // 网络请求超时时间
         private  static  final  int TIME_OUT = 60;
+
+        private static final OkHttpClient.Builder BUILDER = new OkHttpClient.Builder();
+        private static final ArrayList<Interceptor> INTERCEPTORS = Latte.getConfiguration(ConfigKeys.INTERCEPTOR);
+
+        private static OkHttpClient.Builder addInterceptor() {
+            if (INTERCEPTORS != null && !INTERCEPTORS.isEmpty()) {
+                for (Interceptor interceptor : INTERCEPTORS) {
+                    BUILDER.addInterceptor(interceptor);
+                }
+            }
+            return BUILDER;
+        }
         // TimeUnit.SECONDS 以秒为单位
         // okhttp可以添加拦截器 （可以用来设置请求的header）
-        private  static  final OkHttpClient OK_HTTP_CLIENT = new OkHttpClient.Builder()
+        private static final OkHttpClient OK_HTTP_CLIENT = addInterceptor()
                 .connectTimeout(TIME_OUT, TimeUnit.SECONDS)
                 .build();
-
     }
 
     /**

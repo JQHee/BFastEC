@@ -6,5 +6,6 @@ public enum ConfigKeys {
     APPLICATION,            // 全局上下文
     CONFIG_READY,           // 控制初始化或配置是否完成
     ICON,                   // 存储自己初始化的项目
+    INTERCEPTOR,            // okhttp 拦截器
 
 }

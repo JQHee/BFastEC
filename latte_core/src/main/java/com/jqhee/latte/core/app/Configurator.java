@@ -1,10 +1,15 @@
 package com.jqhee.latte.core.app;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+
+import okhttp3.Interceptor;
 
 public class Configurator {
 
     private  static  final HashMap<Object, Object> LATTE_CONFIGS = new HashMap<>();
+    // okhttp拦截器
+    private static final ArrayList<Interceptor> INTERCEPTORS = new ArrayList<>();
 
     private Configurator() {
         //.name() 是以字符串的形式输出出来 name()：返回实例名
@@ -55,6 +60,18 @@ public class Configurator {
         if (!isReady) {
             throw new RuntimeException("Configuration is not ready, call config");
         }
+    }
+
+    public final Configurator withInterceptor(Interceptor interceptor) {
+        INTERCEPTORS.add(interceptor);
+        LATTE_CONFIGS.put(ConfigKeys.INTERCEPTOR, INTERCEPTORS);
+        return this;
+    }
+
+    public final Configurator withInterceptors(ArrayList<Interceptor> interceptors) {
+        INTERCEPTORS.addAll(interceptors);
+        LATTE_CONFIGS.put(ConfigKeys.INTERCEPTOR, INTERCEPTORS);
+        return this;
     }
 
     /**

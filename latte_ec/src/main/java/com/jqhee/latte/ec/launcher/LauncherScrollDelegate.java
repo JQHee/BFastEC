@@ -3,7 +3,9 @@ package com.jqhee.latte.ec.launcher;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.view.ViewPager;
 import android.view.View;
+import android.widget.Button;
 
 import com.bigkoo.convenientbanner.ConvenientBanner;
 import com.bigkoo.convenientbanner.listener.OnItemClickListener;
@@ -14,19 +16,30 @@ import com.jqhee.latte.core.app.IUserChecker;
 import com.jqhee.latte.core.delegates.LatteDelegate;
 import com.jqhee.latte.core.ui.launcher.LauncherHolderCreator;
 import com.jqhee.latte.core.ui.launcher.ScrollLauncherTag;
+import com.jqhee.latte.core.util.log.LatteLogger;
 import com.jqhee.latte.core.util.storage.LattePreference;
 
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
-public class LauncherScrollDelegate extends LatteDelegate implements OnItemClickListener {
+public class LauncherScrollDelegate extends LatteDelegate implements OnItemClickListener, ViewPager.OnPageChangeListener {
 
     @BindView(R2.id.convenientBanner)
     ConvenientBanner<Integer> mConvenientBanner;
 
+    @BindView(R2.id.btn_skip)
+    Button mButton;
+
     private static final ArrayList<Integer> INTEGERS = new ArrayList<>();
     private ILauncherListener mILauncherListener = null;
+
+    @OnClick(R2.id.btn_skip)
+    void skipButtonAction() {
+        LatteLogger.d("Info", "点击");
+    }
 
     private void initBanner() {
         INTEGERS.add(R.mipmap.launcher_01);
@@ -40,6 +53,7 @@ public class LauncherScrollDelegate extends LatteDelegate implements OnItemClick
                 // 不需要圆点指示器可用不设
                 .setPageIndicator(new int[]{R.drawable.dot_normal, R.drawable.dot_focus})
                 .setPageIndicatorAlign(ConvenientBanner.PageIndicatorAlign.CENTER_HORIZONTAL)
+                .setOnPageChangeListener(this)
                 .setOnItemClickListener(this)
                 .setCanLoop(false);
 
@@ -88,5 +102,26 @@ public class LauncherScrollDelegate extends LatteDelegate implements OnItemClick
                 }
             });
         }
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        if (position == INTEGERS.size() - 1) {
+            mButton.setVisibility(View.VISIBLE);
+            mConvenientBanner.setPointViewVisible(false);
+        } else {
+            mButton.setVisibility(View.GONE);
+            mConvenientBanner.setPointViewVisible(true);
+        }
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
     }
 }

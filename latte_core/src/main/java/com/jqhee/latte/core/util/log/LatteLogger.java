@@ -1,5 +1,6 @@
 package com.jqhee.latte.core.util.log;
 
+import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
 /**
@@ -17,6 +18,11 @@ public class LatteLogger {
 
     //控制log等级
     private static int LEVEL = VERBOSE;
+
+    public static  void setup() {
+        // 日志打印初始化
+        Logger.addLogAdapter(new AndroidLogAdapter());
+    }
 
     public static void v(String tag, String message) {
         if (LEVEL <= VERBOSE) {

@@ -11,6 +11,7 @@ import com.jqhee.latte.core.delegates.LatteDelegate;
 import com.jqhee.latte.core.timer.BaseTimerTask;
 import com.jqhee.latte.core.timer.ITimerListener;
 
+import java.text.MessageFormat;
 import java.util.Timer;
 
 import butterknife.BindView;
@@ -51,6 +52,22 @@ public class LauncherDelegate extends LatteDelegate implements ITimerListener {
 
     @Override
     public void onTimer() {
-
+        getProxyActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mTvLauncherTimer != null) {
+                    if (mCount >= 0) {
+                        mTvLauncherTimer.setText(MessageFormat.format("跳过\n{0}s", mCount));
+                    }
+                    mCount--;
+                    if (mCount < 0) {
+                        if (mTimer != null) {
+                            mTimer.cancel();
+                            mTimer = null;
+                        }
+                    }
+                }
+            }
+        });
     }
 }

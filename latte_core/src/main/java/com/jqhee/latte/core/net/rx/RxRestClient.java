@@ -8,6 +8,7 @@ import com.jqhee.latte.core.ui.loader.LatteLoader;
 import com.jqhee.latte.core.ui.loader.LoaderStyle;
 
 import java.io.File;
+import java.util.Map;
 import java.util.WeakHashMap;
 
 import io.reactivex.Observable;
@@ -68,7 +69,7 @@ public class RxRestClient {
                 break;
             case POST_RAW:
                 //传入原始数据
-                observable = service.postRaw(URL, BODY);
+                observable = service.postRaw(URL, BODY == null ? getFormData() : BODY);
                 break;
             case PUT:
                 observable = service.put(URL, PARAMS);
@@ -142,6 +143,25 @@ public class RxRestClient {
          */
 
         return observable;
+    }
+
+    // 拼接如果有多图和参数一起上传
+    private  final RequestBody getFormData() {
+        MultipartBody.Builder builder = new MultipartBody.Builder()
+                .setType(MultipartBody.FORM);
+
+        for (Map.Entry<String, Object> entry: PARAMS.entrySet()
+                ) {
+            if (entry.getValue() instanceof File) {
+                // 这里上传的是多图 (特别 file[])
+                builder.addFormDataPart("file[]", ((File)entry.getValue()).getName(), RequestBody.create(MediaType.parse("image/*"), (File)entry.getValue()));
+            } else {
+
+                builder.addFormDataPart(entry.getKey(), String.valueOf(entry.getValue()));
+            }
+        }
+        RequestBody requestBody = builder.build();
+        return  requestBody;
     }
 
     public final Observable<String> get() {

@@ -70,4 +70,19 @@ public class LauncherDelegate extends LatteDelegate implements ITimerListener {
             }
         });
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        initTimer();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (mTimer != null) {
+            mTimer.cancel();
+            mTimer = null;
+        }
+    }
 }

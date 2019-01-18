@@ -44,6 +44,8 @@ public class RestClientBuilder {
 
     public final RestClientBuilder url(String url) {
         this.mUrl = url;
+        // 全局修改BaseURL
+        // RetrofitUrlManager.getInstance().setGlobalDomain("your BaseUrl");
         return this;
     }
 

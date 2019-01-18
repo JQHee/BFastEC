@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.WeakHashMap;
 import java.util.concurrent.TimeUnit;
 
+import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
@@ -48,7 +49,8 @@ public class RestCreator {
         // 网络请求超时时间
         private  static  final  int TIME_OUT = 60;
 
-        private static final OkHttpClient.Builder BUILDER = new OkHttpClient.Builder();
+        private static final OkHttpClient.Builder BUILDER = RetrofitUrlManager.getInstance().with(new OkHttpClient.Builder());
+
         private static final ArrayList<Interceptor> INTERCEPTORS = Latte.getConfiguration(ConfigKeys.INTERCEPTOR);
 
         private static OkHttpClient.Builder addInterceptor() {
@@ -57,6 +59,7 @@ public class RestCreator {
                     BUILDER.addInterceptor(interceptor);
                 }
             }
+
             return BUILDER;
         }
         // TimeUnit.SECONDS 以秒为单位

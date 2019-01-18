@@ -18,6 +18,7 @@ import com.jqhee.latte.core.ui.launcher.LauncherHolderCreator;
 import com.jqhee.latte.core.ui.launcher.ScrollLauncherTag;
 import com.jqhee.latte.core.util.log.LatteLogger;
 import com.jqhee.latte.core.util.storage.LattePreference;
+import com.jqhee.latte.ec.sign.SignInDelegate;
 
 import java.util.ArrayList;
 import java.util.logging.Logger;
@@ -39,6 +40,23 @@ public class LauncherScrollDelegate extends LatteDelegate implements OnItemClick
     @OnClick(R2.id.btn_skip)
     void skipButtonAction() {
         LatteLogger.d("Info", "点击");
+        LattePreference.setAppFlag(ScrollLauncherTag.HAS_FIRST_LAUNCHER_APP.name(), true);
+        //检查用户是否登录APP
+        AccountManager.checkAccount(new IUserChecker() {
+            @Override
+            public void onSignIn() {
+                if (mILauncherListener != null) {
+                    mILauncherListener.onLauncherFinish(OnLauncherFinishTag.SIGNED);
+                }
+            }
+
+            @Override
+            public void onNotSignIn() {
+                if (mILauncherListener != null) {
+                    mILauncherListener.onLauncherFinish(OnLauncherFinishTag.NOT_SIGNED);
+                }
+            }
+        });
     }
 
     private void initBanner() {
@@ -83,6 +101,7 @@ public class LauncherScrollDelegate extends LatteDelegate implements OnItemClick
     @Override
     public void onItemClick(int position) {
         //如果点击的是最后一个
+        /*
         if (position == INTEGERS.size() - 1) {
             LattePreference.setAppFlag(ScrollLauncherTag.HAS_FIRST_LAUNCHER_APP.name(), true);
             //检查用户是否登录APP
@@ -102,6 +121,7 @@ public class LauncherScrollDelegate extends LatteDelegate implements OnItemClick
                 }
             });
         }
+        */
     }
 
     @Override

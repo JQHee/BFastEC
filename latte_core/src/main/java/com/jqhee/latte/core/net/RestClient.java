@@ -180,6 +180,6 @@ public class RestClient {
     public final void download() {
         new DownloadHandler(URL, IREQUEST,
                 DOWNLOAD_DIR, EXTENSION, NAME,
-                ISUCCESS, IFAILURE, IERROR);
+                ISUCCESS, IFAILURE, IERROR).handleDownload();
     }
 }

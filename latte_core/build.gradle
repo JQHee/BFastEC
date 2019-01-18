@@ -73,6 +73,11 @@ dependencies {
     compile 'org.greenrobot:greendao:3.2.2'
     // Log打印
     compile 'com.orhanobut:logger:2.2.0'
+
+
+    // Android 借助Stetho在Chrome上调试Android网络、数据库、Sharedpreferences https://blog.csdn.net/zhaoyanjun6/article/details/61919840
+    // http://facebook.github.io/stetho/
+    // compile 'com.facebook.stetho:stetho-okhttp3:1.4.2'
 }
 
 // 开源： http://www.jcodecraeer.com

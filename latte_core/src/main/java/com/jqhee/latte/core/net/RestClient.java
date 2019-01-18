@@ -12,6 +12,7 @@ import com.jqhee.latte.core.ui.loader.LatteLoader;
 import com.jqhee.latte.core.ui.loader.LoaderStyle;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.WeakHashMap;
 
@@ -116,6 +117,24 @@ public class RestClient {
                 final MultipartBody.Part body = MultipartBody.Part.createFormData("file", FILE.getName(), requestBody);
                 call = service.upload(URL, body);
                 break;
+
+            case UPLOAD_FILES:
+                // 待测试
+                Map<String, MultipartBody.Part> paramsMap = new HashMap<>();
+                for (Map.Entry<String, Object> entry: PARAMS.entrySet()
+                     ) {
+                    if (entry.getValue() instanceof File) {
+                        final RequestBody trequestBody = RequestBody.create(MediaType.parse(MultipartBody.FORM.toString()), ((File)entry.getValue()));
+                        // 表单的方式提交
+                        final MultipartBody.Part tbody = MultipartBody.Part.createFormData(entry.getKey(), ((File)entry.getValue()).getName(), trequestBody);
+                        paramsMap.put(entry.getKey(), tbody);
+                    } else {
+                        final MultipartBody.Part tbody = MultipartBody.Part.createFormData(entry.getKey(), entry.getKey());
+                        paramsMap.put(entry.getKey(), tbody);
+                    }
+                }
+                call = service.upLoadFiles(URL, paramsMap);
+                break;
             default:
                 break;
         }
@@ -175,6 +194,10 @@ public class RestClient {
 
     public final void upload() {
         request(HttpMethod.UPLOAD);
+    }
+
+    public final void uploadFiles() {
+        request(HttpMethod.UPLOAD_FILES);
     }
 
     public final void download() {

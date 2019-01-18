@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 27
@@ -79,6 +80,9 @@ dependencies {
 
     // 轮播图 Banner依赖 (https://github.com/Bigkoo/Android-ConvenientBanner)
     compile 'com.bigkoo:convenientbanner:2.0.5'
+
+    //数据库依赖
+    compile 'org.greenrobot:greendao:3.2.2'
 
 
     // Android 借助Stetho在Chrome上调试Android网络、数据库、Sharedpreferences https://blog.csdn.net/zhaoyanjun6/article/details/61919840

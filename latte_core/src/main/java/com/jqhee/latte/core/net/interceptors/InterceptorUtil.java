@@ -1,6 +1,7 @@
 package com.jqhee.latte.core.net.interceptors;
 
-import com.wuchao.latte.util.log.LatteLogger;
+
+import com.jqhee.latte.core.util.log.LatteLogger;
 
 import okhttp3.logging.HttpLoggingInterceptor;
 

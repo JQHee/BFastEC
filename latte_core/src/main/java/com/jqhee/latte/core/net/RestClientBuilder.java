@@ -20,6 +20,13 @@ public class RestClientBuilder {
 
     private  String mUrl = null;
     private  static final WeakHashMap<String, Object> PARAMS = RestCreator.getParams();
+
+    /// 文件下载
+    // 文件目录
+    private  String mDownloadDir;
+    private  String mExtension;
+    private  String mName;
+
     private  IRequest mIRequest = null;
     private  ISuccess mISuccess = null;
     private  IFailure mIFailure = null;
@@ -94,8 +101,15 @@ public class RestClientBuilder {
         return this;
     }
 
+    public final RestClientBuilder downloadSetting(String downloadDir, String extension, String name) {
+        this.mDownloadDir = downloadDir;
+        this.mExtension = extension;
+        this.mName = name;
+        return this;
+    }
+
     // RestClient 发起网络请求参数配置
     public final RestClient builder() {
-        return  new RestClient(mUrl, PARAMS, mIRequest, mISuccess, mIFailure, mIError, mBody, mFile, mLoaderStyple, mContext);
+        return  new RestClient(mUrl, PARAMS, mDownloadDir, mExtension, mName, mIRequest, mISuccess, mIFailure, mIError, mBody, mFile, mLoaderStyple, mContext);
     }
 }

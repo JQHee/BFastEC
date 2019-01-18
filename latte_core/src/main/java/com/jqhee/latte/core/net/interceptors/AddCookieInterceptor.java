@@ -1,7 +1,8 @@
 package com.jqhee.latte.core.net.interceptors;
 
-import com.wuchao.latte.util.log.LatteLogger;
-import com.wuchao.latte.util.storage.LattePreference;
+
+import com.jqhee.latte.core.util.log.LatteLogger;
+import com.jqhee.latte.core.util.storage.LattePreference;
 
 import java.io.IOException;
 

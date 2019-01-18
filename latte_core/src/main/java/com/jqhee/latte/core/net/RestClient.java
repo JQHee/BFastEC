@@ -119,21 +119,7 @@ public class RestClient {
                 break;
 
             case UPLOAD_FILES:
-                // 待测试
-                Map<String, MultipartBody.Part> paramsMap = new HashMap<>();
-                for (Map.Entry<String, Object> entry: PARAMS.entrySet()
-                     ) {
-                    if (entry.getValue() instanceof File) {
-                        final RequestBody tRequestBody = RequestBody.create(MediaType.parse(MultipartBody.FORM.toString()), ((File)entry.getValue()));
-                        // 表单的方式提交
-                        final MultipartBody.Part tBody = MultipartBody.Part.createFormData(entry.getKey(), ((File)entry.getValue()).getName(), tRequestBody);
-                        paramsMap.put(entry.getKey(), tBody);
-                    } else {
-                        final MultipartBody.Part tBody = MultipartBody.Part.createFormData(entry.getKey(), entry.getKey());
-                        paramsMap.put(entry.getKey(), tBody);
-                    }
-                }
-                call = service.upLoadFiles(URL, paramsMap);
+                call = service.upLoadFiles(URL, getFormData());
                 break;
             default:
                 break;
@@ -157,6 +143,25 @@ public class RestClient {
                 IERROR,
                 LOADER_STYLE
         );
+    }
+
+    // 拼接如果有多图和参数一起上传
+    private  final RequestBody getFormData() {
+        MultipartBody.Builder builder = new MultipartBody.Builder()
+                .setType(MultipartBody.FORM);
+
+        for (Map.Entry<String, Object> entry: PARAMS.entrySet()
+                ) {
+            if (entry.getValue() instanceof File) {
+                // 这里上传的是多图 (特别 file[])
+                builder.addFormDataPart("file[]", ((File)entry.getValue()).getName(), RequestBody.create(MediaType.parse("image/*"), (File)entry.getValue()));
+            } else {
+
+                builder.addFormDataPart(entry.getKey(), String.valueOf(entry.getValue()));
+            }
+        }
+        RequestBody requestBody = builder.build();
+        return  requestBody;
     }
 
     public final void get() {

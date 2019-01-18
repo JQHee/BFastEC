@@ -61,8 +61,7 @@ public interface RestService {
     @POST
     Call<String> upload(@Url String url, @Part MultipartBody.Part file);
 
-    @Multipart
     @POST()
-    Call<String> upLoadFiles(@Url String url, @PartMap Map<String, MultipartBody.Part> params);
+    Call<String> upLoadFiles(@Url String url, @Body RequestBody body);
 
 }

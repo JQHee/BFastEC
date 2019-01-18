@@ -74,6 +74,9 @@ dependencies {
     // Log打印
     compile 'com.orhanobut:logger:2.2.0'
 
+    // 轮播图 Banner依赖 (https://github.com/Bigkoo/Android-ConvenientBanner)
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+
 
     // Android 借助Stetho在Chrome上调试Android网络、数据库、Sharedpreferences https://blog.csdn.net/zhaoyanjun6/article/details/61919840
     // http://facebook.github.io/stetho/

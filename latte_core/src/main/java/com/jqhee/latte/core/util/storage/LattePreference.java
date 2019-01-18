@@ -59,6 +59,9 @@ public class LattePreference {
                 .apply();
     }
 
+    /**
+     * app 是否是第一次启动
+     */
     public static void setAppFlag(String key, boolean flag) {
         getAppPreference()
                 .edit()

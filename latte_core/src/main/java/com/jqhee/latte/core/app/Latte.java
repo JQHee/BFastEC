@@ -11,8 +11,8 @@ public class Latte {
      * @param  context
      */
     public  static Configurator init(Context context) {
-        getConfigurator().getLatteConfigurations().put(ConfigKeys.APPLICATION_CONTEXT.name(), context.getApplicationContext());
-        getConfigurator().getLatteConfigurations().put(ConfigKeys.APPLICATION.name(), context);
+        getConfigurator().getLatteConfigurations().put(ConfigKeys.APPLICATION_CONTEXT, context.getApplicationContext());
+        getConfigurator().getLatteConfigurations().put(ConfigKeys.APPLICATION, context);
         return Configurator.getInstance();
     }
 

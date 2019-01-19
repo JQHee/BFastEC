@@ -31,6 +31,7 @@ public class DebugInterceptor extends BaseInterceptor {
         return new Response.Builder()
                 .code(200)
                 .addHeader("content-Type", "application/json")
+                .addHeader("Accept-Encoding", "identity")
                 .body(ResponseBody.create(MediaType.parse("application/json"), json))
                 .message("ok")
                 .request(chain.request())

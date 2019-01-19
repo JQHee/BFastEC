@@ -32,10 +32,10 @@ public class RestCreator {
      *  Retrofit 对象创建
      */
     private static final class RetrofitHolder {
-        private  static  final  String BASE_URL = (String) Latte.getLatteConfigurations().get(ConfigKeys.API_HOST.name());
 
+        private static final String BASE_URL = Latte.getConfiguration(ConfigKeys.API_HOST);
         // ScalarsConverterFactory.create() 添加 String类型[ Scalars (primitives, boxed, and String)] 转换器
-        private  static  final Retrofit RETROFIT_CLIENT = new Retrofit.Builder()
+        private static final Retrofit RETROFIT_CLIENT = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(OKHttpHolder.OK_HTTP_CLIENT)
                 .addConverterFactory(ScalarsConverterFactory.create())

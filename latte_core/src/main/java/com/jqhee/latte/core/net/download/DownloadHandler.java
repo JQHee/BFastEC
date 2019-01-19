@@ -8,6 +8,7 @@ import com.jqhee.latte.core.net.callback.IError;
 import com.jqhee.latte.core.net.callback.IFailure;
 import com.jqhee.latte.core.net.callback.IRequest;
 import com.jqhee.latte.core.net.callback.ISuccess;
+import com.jqhee.latte.core.util.log.LatteLogger;
 
 import java.util.WeakHashMap;
 
@@ -68,6 +69,7 @@ public class DownloadHandler {
                                     DOWNLOAD_DIR, EXTENSION, responseBody, NAME);
                             //这里一定要判断，否则文件下载不全
                             if (task.isCancelled()) {
+
                                 if (REQUEST != null) {
                                     REQUEST.onRequestEnd();
                                 }

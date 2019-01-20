@@ -1,6 +1,8 @@
 package com.jqhee.latte.core.net.interceptors;
 
 
+import android.annotation.SuppressLint;
+
 import com.jqhee.latte.core.util.log.LatteLogger;
 import com.jqhee.latte.core.util.storage.LattePreference;
 
@@ -20,6 +22,7 @@ import okhttp3.Response;
 
 public final class AddCookieInterceptor implements Interceptor {
 
+    @SuppressLint("CheckResult")
     @Override
     public Response intercept(Chain chain) throws IOException {
         final Request.Builder builder = chain.request().newBuilder();

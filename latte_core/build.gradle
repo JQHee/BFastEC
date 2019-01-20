@@ -45,7 +45,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // 特别注意 使用是compile 不是implementation
-    compile project(':latte_annotations')
+    implementation project(':latte_annotations')
 
     //字体图标
     compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'

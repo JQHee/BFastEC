@@ -112,6 +112,19 @@ public class RestClientBuilder {
 
     // RestClient 发起网络请求参数配置
     public final RestClient builder() {
-        return  new RestClient(mUrl, PARAMS, mDownloadDir, mExtension, mName, mIRequest, mISuccess, mIFailure, mIError, mBody, mFile, mLoaderStyple, mContext);
+        return  new RestClient(mUrl,
+                PARAMS,
+                mDownloadDir,
+                mExtension,
+                mName,
+                mIRequest,
+                mISuccess,
+                mIFailure,
+                mIError,
+                mBody,
+                mFile,
+                mLoaderStyple,
+                mContext
+        );
     }
 }

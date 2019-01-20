@@ -36,4 +36,5 @@ public class DatabaseManager {
     public final UserProfileDao getDao() {
         return mUserProfileDao;
     }
+
 }

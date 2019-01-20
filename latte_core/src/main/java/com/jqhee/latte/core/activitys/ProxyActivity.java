@@ -1,30 +1,19 @@
 package com.jqhee.latte.core.activitys;
 
-import android.app.Activity;
-import android.content.Context;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.ContentFrameLayout;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewGroup;
-
 
 import com.jqhee.latte.core.R;
 import com.jqhee.latte.core.delegates.LatteDelegate;
 
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 import me.yokeyword.fragmentation.ExtraTransaction;
-import me.yokeyword.fragmentation.ISupportActivity;
 import me.yokeyword.fragmentation.ISupportFragment;
 import me.yokeyword.fragmentation.SupportActivity;
 import me.yokeyword.fragmentation.SupportActivityDelegate;
-import me.yokeyword.fragmentation.SupportFragmentDelegate;
 import me.yokeyword.fragmentation.SupportHelper;
 import me.yokeyword.fragmentation.anim.FragmentAnimator;
 
@@ -44,7 +33,7 @@ public abstract class ProxyActivity extends SupportActivity {
     }
 
     private void initContainer(@Nullable Bundle savedInstanceState) {
-        final ContentFrameLayout container = new ContentFrameLayout(this);
+        @SuppressLint("RestrictedApi") final ContentFrameLayout container = new ContentFrameLayout(this);
         container.setId(R.id.delegate_container);
         setContentView(container);
         //第一次加载时
@@ -91,7 +80,7 @@ public abstract class ProxyActivity extends SupportActivity {
         return mDelegate.dispatchTouchEvent(ev) || super.dispatchTouchEvent(ev);
     }
 
-    /**
+    /*
      * 不建议复写该方法,请使用 {@link #onBackPressedSupport} 代替
      */
     /*

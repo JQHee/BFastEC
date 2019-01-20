@@ -9,6 +9,7 @@ import com.jqhee.latte.core.net.interceptors.AddCookieInterceptor;
 import com.jqhee.latte.core.net.interceptors.DebugInterceptor;
 import com.jqhee.latte.core.net.interceptors.ProgressInterceptor;
 import com.jqhee.latte.core.util.log.LatteLogger;
+import com.jqhee.latte.ec.database.DatabaseManager;
 
 import java.util.ArrayList;
 
@@ -23,7 +24,11 @@ public class ExampleApp  extends Application {
 
         // 日志打印初始化
         LatteLogger.setup();
-        initStetho();
+        // 需要翻墙
+        // initStetho();
+
+        // 数据库初始化
+        DatabaseManager.getInstance().init(this);
 
         ArrayList<Interceptor> array =new  ArrayList();
         // array.add(new DebugInterceptor("test", R.raw.test));

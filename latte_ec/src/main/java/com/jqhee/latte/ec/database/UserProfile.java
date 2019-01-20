@@ -10,6 +10,7 @@ public class UserProfile {
 
     // Id 必须是long类型
     @Id
+    // @Id(autoincrement = true)
     private long userId = 0;
     private String name;
     private String avatar;

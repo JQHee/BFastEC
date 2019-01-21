@@ -13,6 +13,7 @@ import com.jqhee.latte.core.delegates.LatteDelegate;
 import com.jqhee.latte.ec.launcher.ILauncherListener;
 import com.jqhee.latte.ec.launcher.LauncherDelegate;
 import com.jqhee.latte.ec.launcher.OnLauncherFinishTag;
+import com.jqhee.latte.ec.main.EcBottomDelegate;
 import com.jqhee.latte.ec.sign.SignInDelegate;
 
 public class ExampleActivity extends ProxyActivity implements ILauncherListener {
@@ -29,11 +30,12 @@ public class ExampleActivity extends ProxyActivity implements ILauncherListener 
     public void onLauncherFinish(OnLauncherFinishTag tag) {
         switch (tag) {
             case SIGNED: // 已经登录
-                getSupportDelegate().startWithPop(new SignInDelegate());
+                getSupportDelegate().startWithPop(new EcBottomDelegate());
                 break;
             case NOT_SIGNED: // 已经未登录
                 // Toast.makeText(this, "启动结束，用户没登录", Toast.LENGTH_LONG).show();
-                getSupportDelegate().startWithPop(new SignInDelegate());
+                getSupportDelegate().startWithPop(new EcBottomDelegate());
+                //getSupportDelegate().startWithPop(new SignInDelegate());
                 break;
         }
     }

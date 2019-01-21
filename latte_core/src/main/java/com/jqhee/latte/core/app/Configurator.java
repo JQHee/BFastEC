@@ -1,5 +1,10 @@
 package com.jqhee.latte.core.app;
 
+import com.joanzapata.iconify.IconFontDescriptor;
+import com.joanzapata.iconify.Iconify;
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -8,6 +13,7 @@ import okhttp3.Interceptor;
 public class Configurator {
 
     private  static  final HashMap<Object, Object> LATTE_CONFIGS = new HashMap<>();
+    private static final ArrayList<IconFontDescriptor> ICONS = new ArrayList<>();
     // okhttp拦截器
     private static final ArrayList<Interceptor> INTERCEPTORS = new ArrayList<>();
 
@@ -40,7 +46,24 @@ public class Configurator {
      *  配置完成
      */
     public final void  configure() {
+        initIcons();
+        // 日志初始化
+        Logger.addLogAdapter(new AndroidLogAdapter());
         LATTE_CONFIGS.put(ConfigKeys.CONFIG_READY, true);
+    }
+
+    private void initIcons() {
+        if (ICONS.size() > 0) {
+            final Iconify.IconifyInitializer initializer = Iconify.with(ICONS.get(0));
+            for (int i = 1; i < ICONS.size(); i++) {
+                initializer.with(ICONS.get(i));
+            }
+        }
+    }
+
+    public final Configurator withIcon(IconFontDescriptor descriptor) {
+        ICONS.add(descriptor);
+        return this;
     }
 
     /**

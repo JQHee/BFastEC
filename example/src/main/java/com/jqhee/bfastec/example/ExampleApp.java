@@ -4,12 +4,14 @@ import android.app.Application;
 
 import com.facebook.stetho.Stetho;
 import com.facebook.stetho.okhttp3.StethoInterceptor;
+import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.jqhee.latte.core.app.Latte;
 import com.jqhee.latte.core.net.interceptors.AddCookieInterceptor;
 import com.jqhee.latte.core.net.interceptors.DebugInterceptor;
 import com.jqhee.latte.core.net.interceptors.ProgressInterceptor;
 import com.jqhee.latte.core.util.log.LatteLogger;
 import com.jqhee.latte.ec.database.DatabaseManager;
+import com.jqhee.latte.ec.icon.FontEcModule;
 
 import java.util.ArrayList;
 
@@ -22,15 +24,13 @@ public class ExampleApp  extends Application {
     public void onCreate() {
         super.onCreate();
 
-        // 日志打印初始化
-        LatteLogger.setup();
         // 需要翻墙
         // initStetho();
 
         // 数据库初始化
         DatabaseManager.getInstance().init(this);
 
-        ArrayList<Interceptor> array =new  ArrayList();
+        ArrayList<Interceptor> array = new  ArrayList();
         // array.add(new DebugInterceptor("test", R.raw.test));
         array.add(new ProgressInterceptor());
         array.add(new StethoInterceptor());
@@ -39,6 +39,8 @@ public class ExampleApp  extends Application {
         Latte.init(this)
                 .withApiHost("https://www.baidu.com")
                 .withInterceptors(array)
+                .withIcon(new FontAwesomeModule())
+                .withIcon(new FontEcModule())
                 .configure();
     }
 

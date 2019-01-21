@@ -32,6 +32,9 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testImplementation 'junit:junit:4.12'
+    // 特别注意 使用是compile 不是implementation
+    implementation project(':latte_annotations')
+
     //Android Support包
     //noinspection GradleCompatible
     compile 'com.android.support:support-v4:27.1.1'
@@ -45,9 +48,7 @@ dependencies {
 
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    // 特别注意 使用是compile 不是implementation
-    implementation project(':latte_annotations')
-    // annotationProcessor project(':latte_compiler')
+
 
     //字体图标
     compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'

@@ -22,8 +22,8 @@ public class ExampleActivity extends ProxyActivity implements ILauncherListener 
     @Override
     public LatteDelegate setRootDelegate() {
         // 加载启动页
-        return new ExampleDelegate();
-        // return new LauncherDelegate();
+        // return new ExampleDelegate();
+        return new LauncherDelegate();
     }
 
     @Override

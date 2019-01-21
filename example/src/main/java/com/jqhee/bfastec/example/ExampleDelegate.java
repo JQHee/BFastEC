@@ -54,7 +54,7 @@ public class ExampleDelegate extends LatteDelegate implements ProgressListener {
                     }
                 })
                 .builder()
-                .get();
+                .download();
     }
 
     @Override

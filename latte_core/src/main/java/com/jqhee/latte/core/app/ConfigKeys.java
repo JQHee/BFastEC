@@ -7,5 +7,7 @@ public enum ConfigKeys {
     CONFIG_READY,           // 控制初始化或配置是否完成
     ICON,                   // 存储自己初始化的项目
     INTERCEPTOR,            // okhttp 拦截器
-
+    WE_CHAT_APP_ID,
+    WE_CHAT_APP_SECRET,
+    ACTIVITY
 }

@@ -47,6 +47,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     // 特别注意 使用是compile 不是implementation
     implementation project(':latte_annotations')
+    // annotationProcessor project(':latte_compiler')
 
     //字体图标
     compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
@@ -86,8 +87,12 @@ dependencies {
     // 轮播图 Banner依赖 (https://github.com/Bigkoo/Android-ConvenientBanner)
     compile 'com.bigkoo:convenientbanner:2.0.5'
 
-    //数据库依赖
+    // 数据库依赖
     compile 'org.greenrobot:greendao:3.2.2'
+
+    // 微信SDK
+    // 在你的包名相应目录下新建一个wxapi包名目录，并在该wxapi目录下新增一个WXEntryActivity类，该类继承自Activity
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.6'
 
 
     // Android 借助Stetho在Chrome上调试Android网络、数据库、Sharedpreferences https://blog.csdn.net/zhaoyanjun6/article/details/61919840

@@ -1,6 +1,8 @@
 package com.jqhee.bfastec.example;
 
 import android.app.Application;
+import android.content.Context;
+import android.support.multidex.MultiDex;
 
 import com.facebook.stetho.Stetho;
 import com.facebook.stetho.okhttp3.StethoInterceptor;
@@ -41,7 +43,15 @@ public class ExampleApp  extends Application {
                 .withInterceptors(array)
                 .withIcon(new FontAwesomeModule())
                 .withIcon(new FontEcModule())
+                .withWeChatAppId("")
+                .withWeChatAppSecret("")
                 .configure();
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 
     private void initStetho() {

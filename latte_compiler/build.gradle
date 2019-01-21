@@ -1,8 +1,13 @@
 apply plugin: 'java-library'
+apply plugin: 'java'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':latte_annotations')
+    compile 'com.squareup:javapoet:1.11.1'
+    compile 'com.google.auto.service:auto-service:1.0-rc4'
+    compile 'com.google.auto:auto-common:0.9'
 }
 
-sourceCompatibility = "7"
-targetCompatibility = "7"
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

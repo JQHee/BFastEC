@@ -80,6 +80,7 @@ public class SaveFileTask extends AsyncTask<Object, Integer, File> {
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             //获取下载文件的大小
             contentLen = connection.getContentLength();
+            LatteLogger.i("Max-", String.valueOf(contentLen));
             //根据下载文件大小设置进度条最大值（使用标记区别实时进度更新）
             publishProgress(PROGRESS_MAX,contentLen);
             //循环下载（边读取边存入）
@@ -168,18 +169,20 @@ public class SaveFileTask extends AsyncTask<Object, Integer, File> {
         if (FileUtil.getExtension(file.getPath()).equals("apk")) {
 
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            // 由于没有在Activity环境下启动Activity,设置下面的标签
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             //版本在7.0以上是不能直接通过uri访问的
             if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N) {
                 LatteLogger.d("版本大于 N ，开始使用 fileProvider 进行安装");
+                // 由于没有在Activity环境下启动Activity,设置下面的标签
+                intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 //参数1 上下文, 参数2 Provider主机地址 和配置文件中保持一致   参数3  共享的文件
-                Uri apkUri = FileProvider.getUriForFile(Latte.getApplication(), "com.jqhee.bfastec.example", file);
+                Uri apkUri = FileProvider.getUriForFile(Latte.getApplication(), "com.jqhee.bfastec.example.fileprovider", file);
                 //添加这一句表示对目标应用临时授权该Uri所代表的文件
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 intent.setDataAndType(apkUri, "application/vnd.android.package-archive");
             } else {
                 LatteLogger.d("正常安装");
+                // 由于没有在Activity环境下启动Activity,设置下面的标签
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.setDataAndType(Uri.fromFile(file),
                         "application/vnd.android.package-archive");
             }

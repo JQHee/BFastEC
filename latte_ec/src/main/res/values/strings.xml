@@ -1,3 +1,8 @@
 <resources>
-    <string name="ec_app_name">latteEC</string>
+    <string name="ec_app_name">电商</string>
+
+    <!--各模块的标题-->
+    <string name="nav_sign_in_title">登录</string>
+    <string name="nav_sign_up_title">注册</string>
+
 </resources>

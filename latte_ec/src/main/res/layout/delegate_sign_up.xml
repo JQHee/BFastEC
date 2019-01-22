@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="注册"
+            android:text="@string/nav_sign_up_title"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             tools:ignore="HardcodedText"

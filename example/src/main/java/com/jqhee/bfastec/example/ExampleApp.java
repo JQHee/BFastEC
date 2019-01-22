@@ -7,6 +7,7 @@ import android.support.multidex.MultiDex;
 import com.facebook.stetho.Stetho;
 import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
+import com.jqhee.bfastec.example.testweb.event.TestEvent;
 import com.jqhee.latte.core.app.Latte;
 import com.jqhee.latte.core.net.interceptors.AddCookieInterceptor;
 import com.jqhee.latte.core.net.interceptors.DebugInterceptor;
@@ -45,6 +46,9 @@ public class ExampleApp  extends Application {
                 .withIcon(new FontEcModule())
                 .withWeChatAppId("")
                 .withWeChatAppSecret("")
+                .withJavaScriptInterface("native")
+                .withWebHost("https://www.baidu.com")
+                .withWebEvent("test", new TestEvent())
                 .configure();
     }
 

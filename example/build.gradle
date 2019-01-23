@@ -6,13 +6,15 @@ def releaseTime() {
 }
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
+        // as3.0及以上版本 多渠道打包必须定义
+        flavorDimensions ""
         applicationId "com.jqhee.bfastec.example"
-        minSdkVersion 15
-        targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -44,14 +46,18 @@ android {
 
     // 模块名-渠道名-版本号-版本名称-包名-编译时间.apk
     android.applicationVariants.all { variant ->
+        // outputFileName = "driver_${variant.productFlavors[0].name}_v${variant.versionName}.apk"
+
         variant.outputs.each { output ->
             def outputFile = output.outputFile
             if (outputFile != null && outputFile.name.endsWith('.apk')) {
+
                 // 这里修改apk文件名
+                /*
                 def fileName = "demo_${variant.productFlavors[0].name}-${defaultConfig.versionCode}-${defaultConfig.versionName}-${releaseTime()}.apk"
                 // def fileName = outputFile.name.replace("app", "${rootProject.ext.appName}-${releaseTime()}-${defaultConfig.versionCode}-${defaultConfig.versionName}")
-
                 output.outputFile = new File(outputFile.parent, fileName)
+                */
 
                 // 如： com.test.demo-release-v1.01-2.apk
                 // 自定义打包的包名（不需要每次都要手动去改包名）

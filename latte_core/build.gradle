@@ -27,6 +27,11 @@ android {
 }
 
 dependencies {
+
+    /*
+    * compile 换成 implementation 两边都要导入
+    */
+
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -84,6 +89,23 @@ dependencies {
 
     // 数据库依赖
     compile 'org.greenrobot:greendao:3.2.2'
+
+    // RecyclerView 依赖 (多种页面布局)
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    // RecyclerView 分割线
+    compile 'com.choices.divider:RecyclerView_Divider:1.0.0'
+    // 沉浸式状态栏
+    compile('com.github.niorgai:StatusBarCompat:2.1.4', {
+        exclude group: 'com.android.support'
+    })
+    compile 'com.jaeger.statusbarutil:library:1.5.1'
+    // Google AutoValue（实现导航栏的颜色渐变）
+    compileOnly 'com.google.auto.value:auto-value:1.5.2'
+    annotationProcessor "com.google.auto.value:auto-value:1.5.2"
+    // 图片处理（比较轻量）
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:4.0.0-RC0@aar'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
 
     // 微信SDK
     // 在你的包名相应目录下新建一个wxapi包名目录，并在该wxapi目录下新增一个WXEntryActivity类，该类继承自Activity

@@ -56,6 +56,14 @@ android {
                 // 如： com.test.demo-release-v1.01-2.apk
                 // 自定义打包的包名（不需要每次都要手动去改包名）
                 //  output.outputFile = new File(output.outputFile.parent, defaultConfig.applicationId + "-" + buildType.name + "-v" + defaultConfig.versionName + "-" + defaultConfig.versionCode + ".apk" );
+
+                // like: cqq-v1.0-1-release.apk
+                /*
+                outputFileName = defaultConfig.applicationId.subSequence(
+                        defaultConfig.applicationId.lastIndexOf(".") + 1,
+                        defaultConfig.applicationId.length()) + "-v" + defaultConfig.versionName + "-" +
+                        defaultConfig.versionCode + "-" + output.baseName + ".apk"
+                 */
             }
         }
     }

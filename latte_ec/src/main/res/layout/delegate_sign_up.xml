@@ -54,7 +54,7 @@
                     android:id="@+id/edit_sign_up_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="姓名"
+                    android:hint="@string/tv_sign_up_name"
                     android:inputType="textPersonName"
                     tools:ignore="HardcodedText" />
             </android.support.design.widget.TextInputLayout>
@@ -70,7 +70,7 @@
                     android:id="@+id/edit_sign_up_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="邮箱"
+                    android:hint="@string/tv_sign_up_email"
                     android:inputType="textEmailAddress"
                     tools:ignore="HardcodedText" />
             </android.support.design.widget.TextInputLayout>
@@ -86,7 +86,7 @@
                     android:id="@+id/edit_sign_up_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="手机号码"
+                    android:hint="@string/tv_sign_up_phone_number"
                     android:inputType="phone"
                     tools:ignore="HardcodedText" />
             </android.support.design.widget.TextInputLayout>
@@ -102,7 +102,7 @@
                     android:id="@+id/edit_sign_up_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="密码"
+                    android:hint="@string/tv_sign_up_password"
                     android:inputType="textPassword"
                     tools:ignore="HardcodedText" />
             </android.support.design.widget.TextInputLayout>
@@ -118,7 +118,7 @@
                     android:id="@+id/edit_sign_up_re_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="重复密码"
+                    android:hint="@string/tv_sign_up_re_password"
                     android:inputType="textPassword"
                     tools:ignore="HardcodedText" />
             </android.support.design.widget.TextInputLayout>
@@ -131,7 +131,7 @@
                 android:layout_marginTop="24dp"
                 android:gravity="center"
                 android:padding="12dp"
-                android:text="注册"
+                android:text="@string/btn_sign_up_title"
                 android:textColor="@android:color/white"
                 tools:ignore="HardcodedText"
                 android:background="@drawable/border_circle_sign_in_button"/>
@@ -142,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:gravity="center"
-                android:text="已经注册了？请登录"
+                android:text="@string/tv_sign_up_login"
                 android:textSize="16sp"
                 tools:ignore="HardcodedText" />
 

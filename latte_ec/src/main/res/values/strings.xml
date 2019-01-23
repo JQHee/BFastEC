@@ -1,8 +1,32 @@
 <resources>
     <string name="ec_app_name">电商</string>
 
-    <!--各模块的标题-->
-    <string name="nav_sign_in_title">登录</string>
-    <string name="nav_sign_up_title">注册</string>
+    <!--引导页-->
 
+    <!--新特性页-->
+    <string name="btn_launcher_scroll_title">进入app</string>
+
+    <!--登录-->
+    <string name="nav_sign_in_title">登录</string>
+    <string name="tv_sign_in_email">邮箱</string>
+    <string name="tv_sign_in_password">邮箱</string>
+    <string name="btn_sign_in_title">登录</string>
+    <string name="tv_sign_in_register">还没有账户？现在注册吧</string>
+
+    <!--注册-->
+    <string name="nav_sign_up_title">注册</string>
+    <string name="tv_sign_up_name">姓名</string>
+    <string name="tv_sign_up_email">邮箱</string>
+    <string name="tv_sign_up_phone_number">手机号</string>
+    <string name="tv_sign_up_password">密码</string>
+    <string name="tv_sign_up_re_password">重复密码</string>
+    <string name="tv_sign_up_login">已经注册了？请登录</string>
+    <string name="btn_sign_up_title">注册</string>
+
+    <!--发现-->
+    <string name="nav_discover_title">发现</string>
+    <!--首页-->
+    <string name="nav_index_title">首页</string>
+    <!--分类-->
+    <string name="nav_sort_title">分类</string>
 </resources>

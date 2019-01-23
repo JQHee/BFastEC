@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:paddingTop="6dp"
-            android:text="发现"
+            android:text="@string/nav_discover_title"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
     </android.support.v7.widget.Toolbar>

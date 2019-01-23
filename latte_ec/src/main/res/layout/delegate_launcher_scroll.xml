@@ -20,7 +20,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="30dp"
-        android:text="进入app"
+        android:text="@string/btn_launcher_scroll_title"
         android:visibility="gone" />
 
 </RelativeLayout>

@@ -5,8 +5,9 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/tv_example_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="测试"/>
+        android:text="更新"/>
 
 </LinearLayout>

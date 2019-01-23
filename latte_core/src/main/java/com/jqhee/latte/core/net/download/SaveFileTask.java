@@ -8,6 +8,7 @@ import android.os.Environment;
 import android.support.v4.content.FileProvider;
 
 
+import com.jqhee.latte.core.app.AppUpdateService;
 import com.jqhee.latte.core.app.Latte;
 import com.jqhee.latte.core.net.callback.IRequest;
 import com.jqhee.latte.core.net.callback.ISuccess;
@@ -134,6 +135,7 @@ public class SaveFileTask extends AsyncTask<Object, Integer, File> {
                 // progress.incrementProgressBy(values[1]);
                  int i=(values[1]*100)/contentLen;
                     LatteLogger.i("Current-", String.valueOf(i));
+                    AppUpdateService.getInstance(Latte.getApplicationContext()).onProgress(0.3);
                     break;
         }
     }
@@ -148,7 +150,9 @@ public class SaveFileTask extends AsyncTask<Object, Integer, File> {
         if (REQUEST != null) {
             REQUEST.onRequestEnd();
         }
-        autoInstallApk(file);
+
+        AppUpdateService.getInstance(Latte.getApplicationContext()).onSuccess(file);
+        // autoInstallApk(file);
     }
 
     /**
@@ -175,7 +179,7 @@ public class SaveFileTask extends AsyncTask<Object, Integer, File> {
                 // 由于没有在Activity环境下启动Activity,设置下面的标签
                 intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 //参数1 上下文, 参数2 Provider主机地址 和配置文件中保持一致   参数3  共享的文件
-                Uri apkUri = FileProvider.getUriForFile(Latte.getApplication(), "com.jqhee.bfastec.example.fileprovider", file);
+                Uri apkUri = FileProvider.getUriForFile(Latte.getApplicationContext(), "com.jqhee.bfastec.example.fileprovider", file);
                 //添加这一句表示对目标应用临时授权该Uri所代表的文件
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 intent.setDataAndType(apkUri, "application/vnd.android.package-archive");

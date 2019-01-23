@@ -52,6 +52,10 @@ public class ExampleApp  extends Application {
                 .configure();
     }
 
+
+    /**
+     * 解决 使得这个dex的方法数量被限制在65535之内保错问题
+     */
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);

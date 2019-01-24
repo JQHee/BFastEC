@@ -3,6 +3,10 @@ package com.jqhee.latte.ec.sign;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
+import android.support.v7.widget.AppCompatTextView;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Patterns;
 import android.view.View;
 
@@ -33,6 +37,15 @@ public class SignInDelegate extends LatteDelegate {
     void onClickRegisterLinkText() {
         getSupportDelegate().start(new SignUpDelegate());
     }
+
+
+    private void initToolbar(View rootView) {
+        Toolbar toolbar = (Toolbar) rootView.findViewById(R.id.id_toolbar);
+        AppCompatTextView titleText = (AppCompatTextView) rootView.findViewById(R.id.toolbar_title);
+        toolbar.setTitle("");
+        titleText.setText(R.string.nav_sign_in_title);
+    }
+
 
     /**
      * 提交信息校验
@@ -67,6 +80,6 @@ public class SignInDelegate extends LatteDelegate {
 
     @Override
     public void onBindView(@Nullable Bundle savedInstanceState, View rootView) {
-
+        initToolbar(rootView);
     }
 }

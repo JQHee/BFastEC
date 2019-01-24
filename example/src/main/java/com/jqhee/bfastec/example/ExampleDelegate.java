@@ -21,9 +21,6 @@ import com.jqhee.latte.core.net.callback.ISuccess;
 import com.jqhee.latte.core.util.log.LatteLogger;
 
 
-import butterknife.BindView;
-import butterknife.OnClick;
-
 public class ExampleDelegate extends LatteDelegate implements ProgressListener {
 
     private TextView mTextView;

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
+import android.widget.Toast;
 
 import com.jqhee.fast.ec.R;
 import com.jqhee.fast.ec.R2;
@@ -14,6 +15,7 @@ import com.jqhee.latte.core.delegates.LatteDelegate;
 import com.jqhee.latte.core.timer.BaseTimerTask;
 import com.jqhee.latte.core.timer.ITimerListener;
 import com.jqhee.latte.core.ui.launcher.ScrollLauncherTag;
+import com.jqhee.latte.core.util.log.LatteLogger;
 import com.jqhee.latte.core.util.storage.LattePreference;
 
 import java.text.MessageFormat;
@@ -42,6 +44,10 @@ public class LauncherDelegate extends LatteDelegate implements ITimerListener {
 
 
     private void initTimer() {
+        if (mTimer != null) {
+            mTimer.cancel();
+            mTimer = null;
+        }
         mTimer = new Timer();
         final BaseTimerTask task = new BaseTimerTask(this);
         mTimer.schedule(task, 0, 1000);

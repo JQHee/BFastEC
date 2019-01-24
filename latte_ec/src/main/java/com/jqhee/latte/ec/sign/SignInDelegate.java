@@ -19,11 +19,12 @@ import butterknife.OnClick;
 
 public class SignInDelegate extends LatteDelegate {
 
-
+    @BindView(R2.id.toolbar_title)
+    AppCompatTextView mNavTitleTextView = null;
     @BindView(R2.id.edit_sign_in_email)
-    TextInputEditText mEailInputEditText;
+    TextInputEditText mEailInputEditText = null;
     @BindView(R2.id.edit_sign_in_password)
-    TextInputEditText mPasswrodInputEditText;
+    TextInputEditText mPasswrodInputEditText = null;
 
     @OnClick(R2.id.btn_sign_in)
     void  onClickLoginButton() {
@@ -36,14 +37,6 @@ public class SignInDelegate extends LatteDelegate {
     @OnClick(R2.id.tv_link_sign_in)
     void onClickRegisterLinkText() {
         getSupportDelegate().start(new SignUpDelegate());
-    }
-
-
-    private void initToolbar(View rootView) {
-        Toolbar toolbar = (Toolbar) rootView.findViewById(R.id.id_toolbar);
-        AppCompatTextView titleText = (AppCompatTextView) rootView.findViewById(R.id.toolbar_title);
-        toolbar.setTitle("");
-        titleText.setText(R.string.nav_sign_in_title);
     }
 
 
@@ -80,6 +73,6 @@ public class SignInDelegate extends LatteDelegate {
 
     @Override
     public void onBindView(@Nullable Bundle savedInstanceState, View rootView) {
-        initToolbar(rootView);
+        mNavTitleTextView.setText(R.string.nav_sign_in_title);
     }
 }

@@ -18,6 +18,7 @@ public abstract class Event implements IEvent {
     private String mAction;
     private WebDelegate mDelegate;
     private String mUrl;
+    private String mHtmlText;
     private WebView mWebView;
 
     public Context getContext() {
@@ -51,6 +52,8 @@ public abstract class Event implements IEvent {
     public void setUrl(String url) {
         mUrl = url;
     }
+
+    public void setHtmlText(String content) { this.mHtmlText = content; }
 
     public WebView getWebView() {
         return mDelegate.getWebView();

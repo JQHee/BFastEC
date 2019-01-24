@@ -24,6 +24,7 @@ public abstract class WebDelegate extends LatteDelegate implements IWebViewIniti
 
     private ReferenceQueue<WebView> WEB_VIEW_QUEUE = new ReferenceQueue<>();
     private String mUrl = null;
+    private String mHtmlText = null;
     private WebView mWebView = null;
     private boolean mIsWebViewAvailable;
 
@@ -38,7 +39,10 @@ public abstract class WebDelegate extends LatteDelegate implements IWebViewIniti
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final Bundle args = getArguments();
-        mUrl = args.getString(RouteKeys.URL.name());
+        mHtmlText = args.getString(RouteKeys.HTML_TEXT.name());
+        if (mHtmlText == null) {
+            mUrl = args.getString(RouteKeys.URL.name());
+        }
         initWebView();
     }
 
@@ -89,10 +93,11 @@ public abstract class WebDelegate extends LatteDelegate implements IWebViewIniti
     }
 
     public String getUrl() {
-        if (mUrl == null) {
-            throw new NullPointerException("URL IS NULL!");
-        }
         return mUrl;
+    }
+
+    public String getmHtmlText() {
+        return mHtmlText;
     }
 
     @Override

@@ -34,6 +34,7 @@ final class LatteWebInterface {
             event.setContext(DELEGATE.getContext());
             event.setDelegate(DELEGATE);
             event.setUrl(DELEGATE.getUrl());
+            event.setHtmlText(DELEGATE.getmHtmlText());
             return event.execute(params);
         }
         return null;

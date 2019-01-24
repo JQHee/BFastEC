@@ -55,6 +55,8 @@ public class Router {
         }
     }
 
+
+
     private void loadLocalPage(WebView webView, String url) {
         loadWebPage(webView, "file:///android_asset/" + url);
     }
@@ -69,6 +71,23 @@ public class Router {
 
     public final void loadPage(WebDelegate delegate, String url) {
         loadPage(delegate.getWebView(), url);
+    }
+
+
+    /**
+     * 加载网页中的内容
+     */
+    public final void loadPageContent(WebDelegate delegate, String content) {
+        loadWebPageContent(delegate.getWebView(), content);
+    }
+
+    private void loadWebPageContent(WebView webView, String content) {
+        if (webView != null) {
+            // 最后一个参数为编码
+            webView.loadData(content, "text/html", null);
+        } else {
+            throw new NullPointerException("WebView is null!");
+        }
     }
 
     private void callPhone(Context context, String url) {

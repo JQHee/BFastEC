@@ -32,6 +32,14 @@ public class WebDelegateImpl extends WebDelegate {
         return delegate;
     }
 
+    public static WebDelegateImpl createContent(String content) {
+        Bundle bundle = new Bundle();
+        bundle.putString(RouteKeys.HTML_TEXT.name(), content);
+        final WebDelegateImpl delegate = new WebDelegateImpl();
+        delegate.setArguments(bundle);
+        return delegate;
+    }
+
     @Override
     public Object setLayout() {
         return getWebView();
@@ -43,9 +51,12 @@ public class WebDelegateImpl extends WebDelegate {
 
     @Override
     public void onBindView(@Nullable Bundle savedInstanceState, View rootView) {
-        if (getUrl() != null) {
+        if (getmHtmlText() == null) {
             //用原生方式模拟Web跳转并进行页面加载
             Router.getInstance().loadPage(this, getUrl());
+        } else {
+            //用原生方式模拟Web跳转并进行页面加载
+            Router.getInstance().loadPageContent(this, getmHtmlText());
         }
     }
 

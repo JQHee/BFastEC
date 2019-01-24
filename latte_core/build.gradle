@@ -109,6 +109,8 @@ dependencies {
     // 在你的包名相应目录下新建一个wxapi包名目录，并在该wxapi目录下新增一个WXEntryActivity类，该类继承自Activity
     compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.6'
 
+    // 选择器 （类似iOS的PickerView效果）
+    // compile 'com.contrarywind:Android-PickerView:4.1.7'
 
     // Android 借助Stetho在Chrome上调试Android网络、数据库、Sharedpreferences https://blog.csdn.net/zhaoyanjun6/article/details/61919840
     // http://facebook.github.io/stetho/

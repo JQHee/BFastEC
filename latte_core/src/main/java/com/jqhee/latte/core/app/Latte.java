@@ -1,6 +1,7 @@
 package com.jqhee.latte.core.app;
 
 import android.content.Context;
+import android.os.Handler;
 
 import java.util.HashMap;
 
@@ -35,6 +36,10 @@ public class Latte {
 
     public static  Context getApplication() {
         return  getConfiguration(ConfigKeys.APPLICATION);
+    }
+
+    public static Handler getHandler() {
+        return getConfiguration(ConfigKeys.HANDLER);
     }
 
 

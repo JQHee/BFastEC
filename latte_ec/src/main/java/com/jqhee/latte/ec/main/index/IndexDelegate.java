@@ -12,8 +12,10 @@ import com.joanzapata.iconify.widget.IconTextView;
 import com.jqhee.fast.ec.R;
 import com.jqhee.fast.ec.R2;
 import com.jqhee.latte.core.bottom.BottomItemDelegate;
+import com.jqhee.latte.core.ui.refresh.RefreshHandler;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 public class IndexDelegate extends BottomItemDelegate {
 
@@ -30,6 +32,13 @@ public class IndexDelegate extends BottomItemDelegate {
     @BindView(R2.id.tb_index)
     Toolbar mToolbar;
 
+    private RefreshHandler mRefreshHandler = null;
+
+    // 绑定多个
+    @OnClick({R2.id.et_search_view, R2.id.srl_index})
+    void onClick(View view) {
+
+    }
 
     /**
      * 刷新控件初始化
@@ -52,7 +61,7 @@ public class IndexDelegate extends BottomItemDelegate {
 
     @Override
     public void onBindView(@Nullable Bundle savedInstanceState, View rootView) {
-
+        mRefreshHandler = RefreshHandler.create(mRefreshLayout, mRecyclerView);
     }
 
     @Override

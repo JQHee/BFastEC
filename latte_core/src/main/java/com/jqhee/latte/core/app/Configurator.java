@@ -1,6 +1,7 @@
 package com.jqhee.latte.core.app;
 
 import android.app.Activity;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 
 import com.joanzapata.iconify.IconFontDescriptor;
@@ -21,10 +22,12 @@ public class Configurator {
     private static final ArrayList<IconFontDescriptor> ICONS = new ArrayList<>();
     // okhttp拦截器
     private static final ArrayList<Interceptor> INTERCEPTORS = new ArrayList<>();
+    private static final Handler HANDLER = new Handler();
 
     private Configurator() {
         //.name() 是以字符串的形式输出出来 name()：返回实例名
         LATTE_CONFIGS.put(ConfigKeys.CONFIG_READY, false);
+        LATTE_CONFIGS.put(ConfigKeys.HANDLER, HANDLER);
     }
 
     /*

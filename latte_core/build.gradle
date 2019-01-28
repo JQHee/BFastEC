@@ -112,6 +112,20 @@ dependencies {
     // 在你的包名相应目录下新建一个wxapi包名目录，并在该wxapi目录下新增一个WXEntryActivity类，该类继承自Activity
     compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.6'
 
+    //动态权限处理
+    compile("com.github.hotchemi:permissionsdispatcher:3.1.0") {
+        // if you don't use android.app.Fragment you can exclude support for them
+        exclude module: "support-v13"
+    }
+    annotationProcessor "com.github.hotchemi:permissionsdispatcher-processor:3.1.0"
+
+    // 图片剪裁
+    compile 'com.github.yalantis:ucrop:2.2.1-native'
+    // 很全的工具包
+    compile 'com.blankj:utilcode:1.10.0'
+    // 二维码
+    compile 'me.dm7.barcodescanner:zbar:1.9.8'
+
     // 选择器 （类似iOS的PickerView效果）
     // compile 'com.contrarywind:Android-PickerView:4.1.7'
 

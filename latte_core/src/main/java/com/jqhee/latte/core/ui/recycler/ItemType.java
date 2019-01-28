@@ -2,6 +2,7 @@ package com.jqhee.latte.core.ui.recycler;
 
 /**
  * Enum 和 static final， 后者性能更高，看应用场景
+ * 首页recycleView 多布局显示的类型
  */
 
 public class ItemType {

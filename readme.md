@@ -39,6 +39,7 @@ webView
 
 角标
 1.BadgeView：https://github.com/bingoogolapple/BGABadgeView-Android
+2.桌面图片角标：https://github.com/leolin310148/ShortcutBadger
 
 文件下载框架：
 1.FileDownloader：https://github.com/lingochamp/FileDownloader

@@ -28,11 +28,13 @@ public class ListAdapter extends BaseMultiItemQuickAdapter<ListBean, BaseViewHol
 
     public ListAdapter(List<ListBean> data) {
         super(data);
+        // 添加布局
         addItemType(ListItemType.ITEM_NORMAL, R.layout.arrow_item_layout);
         addItemType(ListItemType.ITEM_AVATAR, R.layout.arrow_item_avatar);
         addItemType(ListItemType.ITEM_SWITCH, R.layout.arrow_switch_layout);
     }
 
+    // 数据和布局关联
     @Override
     protected void convert(BaseViewHolder helper, ListBean item) {
         switch (helper.getItemViewType()) {

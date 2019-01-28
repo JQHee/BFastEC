@@ -22,6 +22,15 @@ public class ListBean implements MultiItemEntity {
     private LatteDelegate mDelegate = null;
     private CompoundButton.OnCheckedChangeListener mOnCheckedChangeListener = null;
 
+    /**
+     * @param itemType  item的类型
+     * @param imageUrl  图片链接
+     * @param text      文本
+     * @param value
+     * @param id        当前的id
+     * @param delegate 跳转的页面
+     * @param onCheckedChangeListener 点击事件
+     */
     public ListBean(int itemType,
                     String imageUrl,
                     String text,

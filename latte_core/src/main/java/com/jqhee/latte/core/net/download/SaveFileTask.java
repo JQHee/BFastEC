@@ -4,9 +4,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.os.Environment;
+import android.provider.Settings;
+import android.support.annotation.RequiresApi;
 import android.support.v4.content.FileProvider;
-
 
 import com.jqhee.latte.core.app.AppUpdateService;
 import com.jqhee.latte.core.app.Latte;
@@ -179,10 +179,19 @@ public class SaveFileTask extends AsyncTask<Object, Integer, File> {
                 // 由于没有在Activity环境下启动Activity,设置下面的标签
                 intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 //参数1 上下文, 参数2 Provider主机地址 和配置文件中保持一致   参数3  共享的文件
-                Uri apkUri = FileProvider.getUriForFile(Latte.getApplicationContext(), "com.jqhee.bfastec.example.fileprovider", file);
+                Uri apkUri = FileProvider.getUriForFile(Latte.getApplicationContext(), Latte.getApplicationContext().getPackageName() + ".fileProvider", file);
+                // Uri apkUri = FileProvider.getUriForFile(Latte.getApplicationContext(), "com.jqhee.bfastec.example.fileprovider", file);
                 //添加这一句表示对目标应用临时授权该Uri所代表的文件
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 intent.setDataAndType(apkUri, "application/vnd.android.package-archive");
+                // 兼容8.0
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    boolean hasInstallPermission = Latte.getApplicationContext().getPackageManager().canRequestPackageInstalls();
+                    if (!hasInstallPermission) {
+                        startInstallPermissionSettingActivity();
+                        return;
+                    }
+                }
             } else {
                 LatteLogger.d("正常安装");
                 // 由于没有在Activity环境下启动Activity,设置下面的标签
@@ -192,5 +201,16 @@ public class SaveFileTask extends AsyncTask<Object, Integer, File> {
             }
             Latte.getApplicationContext().startActivity(intent);
         }
+    }
+
+    /**
+     * 跳转到设置-允许安装未知来源-页面
+     */
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private void startInstallPermissionSettingActivity() {
+        //注意这个是8.0新API
+        Intent intent = new Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        Latte.getApplicationContext().startActivity(intent);
     }
 }

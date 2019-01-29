@@ -62,3 +62,13 @@ fragment:
 1.butterknife：https://github.com/JakeWharton/butterknife
 2.注入dagger2: https://github.com/google/dagger
 3.权限：https://github.com/permissions-dispatcher/PermissionsDispatcher
+
+Rx
+1.控件的事件绑定RxBinding：https://github.com/JakeWharton/RxBinding
+2.权限库：https://github.com/tbruyelle/RxPermissions.git
+3.工具库：https://github.com/vondear/RxTool
+4.RxJava:  https://github.com/ReactiveX/RxJava
+5.RxAndroid:  https://github.com/ReactiveX/RxAndroid
+6.Rx生命周期：https://github.com/trello/RxLifecycle
+7.蓝牙: https://github.com/Polidea/RxAndroidBle
+8.事件总线RxBus: https://github.com/AndroidKnife/RxBus

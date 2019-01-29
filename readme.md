@@ -73,3 +73,6 @@ Rx
 6.Rx生命周期：https://github.com/trello/RxLifecycle
 7.蓝牙: https://github.com/Polidea/RxAndroidBle
 8.事件总线RxBus: https://github.com/AndroidKnife/RxBus
+
+#### 具有参考性的项目
+1.今日头条：https://github.com/chaychan/TouTiao

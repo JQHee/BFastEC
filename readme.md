@@ -16,6 +16,7 @@
 弹窗：
 1.Toasty：https://github.com/GrenderG/Toasty
 2.可定制的Dialog： https://github.com/afollestad/material-dialogs
+3.一行代码下载Apk: https://github.com/teprinciple/UpdateAppDemo
 
 图片：
 1.gif图片：https://github.com/koral--/android-gif-drawable

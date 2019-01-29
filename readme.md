@@ -74,5 +74,10 @@ Rx
 7.蓝牙: https://github.com/Polidea/RxAndroidBle
 8.事件总线RxBus: https://github.com/AndroidKnife/RxBus
 
+边缘拖动返回
+1.SwipeBackLayout：https://github.com/ikew0ng/SwipeBackLayout
+
 #### 具有参考性的项目
 1.今日头条：https://github.com/chaychan/TouTiao
+
+

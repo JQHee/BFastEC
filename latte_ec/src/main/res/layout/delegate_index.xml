@@ -33,7 +33,7 @@ android:orientation="vertical">
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-<!--        <com.joanzapata.iconify.widget.IconTextView
+        <com.joanzapata.iconify.widget.IconTextView
             android:id="@+id/icon_index_scan"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -41,9 +41,9 @@ android:orientation="vertical">
             android:layout_weight="1"
             android:gravity="center"
             android:paddingLeft="10dp"
-            android:text="{icon-scan}"
+            android:text="{fa-bullhorn}"
             android:textColor="@android:color/white"
-            android:textSize="25sp"/>-->
+            android:textSize="25sp"/>
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/et_search_view"

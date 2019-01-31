@@ -13,6 +13,7 @@
 
 ##### 工具库：
 - 1.AndroidUtilCode：https://github.com/Blankj/AndroidUtilCode
+- 2.HTML解析：https://github.com/jhy/jsoup
 
 ##### 侧滑菜单：
 - 1.MaterialDrawer：https://github.com/mikepenz/MaterialDrawer

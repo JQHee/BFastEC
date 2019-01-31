@@ -99,6 +99,7 @@
 - 1.内测泄漏检测：https://github.com/square/leakcanary
 - 2.网络调试工具需要翻墙：https://github.com/facebook/stetho
 - 3.dex65535文件报错multidex：implementation 'com.android.support:multidex:1.0.1'
+- 4.安卓插件生成模型：gsonformat 支持gson、fastjson等
 
 #### 具有参考性的项目
 - 1.今日头条：https://github.com/chaychan/TouTiao

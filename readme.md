@@ -14,6 +14,8 @@
 ##### 工具库：
 - 1.AndroidUtilCode：https://github.com/Blankj/AndroidUtilCode
 - 2.HTML解析：https://github.com/jhy/jsoup
+- 3.*工具库（支付、扫码、弹窗）： https://github.com/vondear/RxTool
+- 4.收款码：https://github.com/Exrick/xpay
 
 ##### 侧滑菜单：
 - 1.MaterialDrawer：https://github.com/mikepenz/MaterialDrawer

@@ -7,6 +7,7 @@
 ##### 框架
 - 1.底部导航tabbar：https://github.com/tyzlmjj/PagerBottomTabStrip
 - 2.ViewPager: https://github.com/LuckyJayce/ViewPagerIndicator
+- 3.FlycoTabLayout：https://github.com/H07000223/FlycoTabLayout
 
 ##### 刷新框架：
 - 1.smartrefresh：https://github.com/scwang90/SmartRefreshLayout

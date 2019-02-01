@@ -22,6 +22,7 @@
 - 1.mmkv: https://github.com/Tencent/MMKV
 - 2.realm: https://github.com/realm/realm-java
 - 3.greendao: https://github.com/greenrobot/greenDAO
+- 4.数据库调试工具：https://github.com/amitshekhariitbhu/Android-Debug-Database
 
 ##### 侧滑菜单：
 - 1.MaterialDrawer：https://github.com/mikepenz/MaterialDrawer

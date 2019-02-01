@@ -8,6 +8,7 @@
 - 1.底部导航tabbar：https://github.com/tyzlmjj/PagerBottomTabStrip
 - 2.ViewPager: https://github.com/LuckyJayce/ViewPagerIndicator
 - 3.FlycoTabLayout：https://github.com/H07000223/FlycoTabLayout
+- 4.快速设置圆角、边框控件不需要写一堆selector背景：https://github.com/niniloveyou/StateButton
 
 ##### 刷新框架：
 - 1.smartrefresh：https://github.com/scwang90/SmartRefreshLayout
@@ -68,6 +69,8 @@
 - 1.Matisse：https://github.com/zhihu/Matisse
 - 2.仿微信图片选择器：https://github.com/donglua/PhotoPicker
 - 3.图片选择器：https://github.com/Lichenwei-Dev/ImagePicker
+- 4.图片选取器：https://github.com/donkingliang/ImageSelector
+- 5.图片选取器：https://github.com/bingoogolapple/BGAPhotoPicker-Android
 
 ##### 视频播放器：
 - 1.节操播放器：https://github.com/lipangit/JiaoZiVideoPlayer

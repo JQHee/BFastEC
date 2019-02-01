@@ -39,6 +39,8 @@
 - 3.图片剪裁：https://github.com/Yalantis/uCrop
 - 4.glide图片下载：https://github.com/bumptech/glide
 - 5.picasso图片下载: https://github.com/square/picasso
+- 6.图片压缩Luban： https://github.com/Curzibn/Luban
+- 7.图片压缩Compressor：https://github.com/zetbaitsu/Compressor
 
 ##### 布局：
 - 1.flex-box: https://github.com/google/flexbox-layout

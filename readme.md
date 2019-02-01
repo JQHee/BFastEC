@@ -67,6 +67,7 @@
 ##### 图片或视频选择
 - 1.Matisse：https://github.com/zhihu/Matisse
 - 2.仿微信图片选择器：https://github.com/donglua/PhotoPicker
+- 3.图片选择器：https://github.com/Lichenwei-Dev/ImagePicker
 
 ##### 视频播放器：
 - 1.节操播放器：https://github.com/lipangit/JiaoZiVideoPlayer
@@ -112,6 +113,8 @@
 - 2.网络调试工具需要翻墙：https://github.com/facebook/stetho
 - 3.dex65535文件报错multidex：implementation 'com.android.support:multidex:1.0.1'
 - 4.安卓插件生成模型：gsonformat 支持gson、fastjson等
+- 5.图片高质量压缩：https://www.jianshu.com/p/f305fb008ab6
+- 6.apk优化：https://www.jianshu.com/p/244910d4e942
 
 #### 具有参考性的项目
 - 1.今日头条：https://github.com/chaychan/TouTiao

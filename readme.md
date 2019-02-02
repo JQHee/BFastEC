@@ -9,6 +9,12 @@
 - 2.ViewPager: https://github.com/LuckyJayce/ViewPagerIndicator
 - 3.FlycoTabLayout：https://github.com/H07000223/FlycoTabLayout
 - 4.快速设置圆角、边框控件不需要写一堆selector背景：https://github.com/niniloveyou/StateButton
+- 5.加载框：https://github.com/maning0303/MNProgressHUD
+- 6.页面显示奔溃日志：https://github.com/maning0303/MNCrashMonitor
+- 7.Toast 弹窗提示：https://github.com/bboylin/UniversalToast
+
+##### 事件总线
+- 1.EventBus： https://github.com/greenrobot/EventBus
 
 ##### 刷新框架：
 - 1.smartrefresh：https://github.com/scwang90/SmartRefreshLayout
@@ -24,6 +30,7 @@
 - 2.realm: https://github.com/realm/realm-java
 - 3.greendao: https://github.com/greenrobot/greenDAO
 - 4.数据库调试工具：https://github.com/amitshekhariitbhu/Android-Debug-Database
+- 5.数据存储：https://github.com/orhanobut/hawk
 
 ##### 侧滑菜单：
 - 1.MaterialDrawer：https://github.com/mikepenz/MaterialDrawer
@@ -110,6 +117,7 @@
 
 ##### 动画
 - 1.recyclerview-animators：https://github.com/wasabeef/recyclerview-animators
+- 2.ViewAnimator动画：https://github.com/florent37/ViewAnimator
 
 ##### 优化
 - 1.内测泄漏检测：https://github.com/square/leakcanary

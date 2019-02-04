@@ -13,6 +13,10 @@
 - 6.页面显示奔溃日志：https://github.com/maning0303/MNCrashMonitor
 - 7.Toast 弹窗提示：https://github.com/bboylin/UniversalToast
 
+##### 多状态提示
+- 1.stateView: https://github.com/vlonjatg/progress-activity.git
+- 2.MultipleStatusView：https://github.com/qyxxjd/MultipleStatusView
+
 ##### 事件总线
 - 1.EventBus： https://github.com/greenrobot/EventBus
 

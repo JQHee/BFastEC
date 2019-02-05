@@ -66,6 +66,11 @@
 ##### 轮播图：
 - 1.ConvenientBanner：https://github.com/Bigkoo/Android-ConvenientBanner
 
+##### 跑马灯
+- 1.MarqueeView: https://github.com/sunfusheng/MarqueeView
+- 2.MarqueeViewLibrary: https://github.com/gongwen/MarqueeViewLibrary
+- 2.XMarqueeView: https://github.com/xiaohaibin/XMarqueeView
+
 ##### webView
 - 1.高度封装的webView: https://github.com/Justson/AgentWeb
 

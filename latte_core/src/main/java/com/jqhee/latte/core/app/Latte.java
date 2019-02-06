@@ -22,7 +22,7 @@ public class Latte {
     }
 
     public static  <T> T getConfiguration(Object key) {
-        return  getConfigurator().getConfiguration(key);
+         return  getConfigurator().getConfiguration(key);
     }
 
     public static HashMap<Object, Object> getLatteConfigurations() {

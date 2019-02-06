@@ -12,6 +12,7 @@
 - 5.加载框：https://github.com/maning0303/MNProgressHUD
 - 6.页面显示奔溃日志：https://github.com/maning0303/MNCrashMonitor
 - 7.Toast 弹窗提示：https://github.com/bboylin/UniversalToast
+- 8.加载提示框架：https://github.com/ybq/Android-SpinKit
 
 ##### 多状态提示
 - 1.stateView: https://github.com/vlonjatg/progress-activity.git

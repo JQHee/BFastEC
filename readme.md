@@ -8,13 +8,20 @@
 - 0.application入口文件优化：https://juejin.im/post/5b59a4e7e51d455f5f4cfa38
 - 1.底部导航tabbar：https://github.com/tyzlmjj/PagerBottomTabStrip
 - 2.ViewPager: https://github.com/LuckyJayce/ViewPagerIndicator
-- 3.FlycoTabLayout：https://github.com/H07000223/FlycoTabLayout
+
 - 4.快速设置圆角、边框控件不需要写一堆selector背景：https://github.com/niniloveyou/StateButton
 - 5.加载框：https://github.com/maning0303/MNProgressHUD
 - 6.页面显示奔溃日志：https://github.com/maning0303/MNCrashMonitor
 - 7.Toast 弹窗提示：https://github.com/bboylin/UniversalToast
 - 8.加载提示框架：https://github.com/ybq/Android-SpinKit
 - 9.easypermissions动态权限: https://github.com/googlesamples/easypermissions
+
+##### 分页tab查看
+- 1.MagicIndicator: https://github.com/hackware1993/MagicIndicator
+- 2.FlycoTabLayout：https://github.com/H07000223/FlycoTabLayout
+- 3.PageIndicatorView指示器：https://github.com/romandanylyk/PageIndicatorView
+- 4.RecyclerViewPager：https://github.com/lsjwzh/RecyclerViewPager
+
 
 ##### 多状态提示
 - 1.stateView: https://github.com/vlonjatg/progress-activity.git
@@ -70,6 +77,10 @@
 
 ##### 轮播图：
 - 1.ConvenientBanner：https://github.com/Bigkoo/Android-ConvenientBanner
+- 2.BGABanner：https://github.com/bingoogolapple/BGABanner-Android
+- 3.MZBannerView：https://github.com/pinguo-zhouwei/MZBannerView
+- 4.RecyclerBanner：https://github.com/amy993/RecyclerBanner
+- 5.XBanner：https://github.com/xiaohaibin/XBanner
 
 ##### 跑马灯
 - 1.MarqueeView: https://github.com/sunfusheng/MarqueeView

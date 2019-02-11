@@ -5,6 +5,7 @@
 #### 二、第三方框架整理
 
 ##### 框架
+- 0.application入口文件优化：https://juejin.im/post/5b59a4e7e51d455f5f4cfa38
 - 1.底部导航tabbar：https://github.com/tyzlmjj/PagerBottomTabStrip
 - 2.ViewPager: https://github.com/LuckyJayce/ViewPagerIndicator
 - 3.FlycoTabLayout：https://github.com/H07000223/FlycoTabLayout
@@ -143,7 +144,7 @@
 #### 具有参考性的项目
 - 1.今日头条：https://github.com/chaychan/TouTiao
 - 2.足球项目：https://github.com/wangjian1154/FootballApp
-- 3.新闻类很好的mvp架构：https://github.com/Peakmain/gankzhihu
+- 3.*新闻类很好的mvp架构：https://github.com/Peakmain/gankzhihu
 - 4.DialogFragment弹窗封装：https://github.com/developerHaoz/DialogFragmentDemos
 - 5.万能的Dialog：https://github.com/AnthonyCoder/PowerfulDialog
 - 6.通用的PopupWindow: https://github.com/crazyqiang/AndroidStudy

@@ -13,6 +13,6 @@
         android:layout_gravity="center"
         android:singleLine="true"
         android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:textSize="25sp" />
 
 </android.support.v7.widget.Toolbar>

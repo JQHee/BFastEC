@@ -13,6 +13,7 @@
 - 6.页面显示奔溃日志：https://github.com/maning0303/MNCrashMonitor
 - 7.Toast 弹窗提示：https://github.com/bboylin/UniversalToast
 - 8.加载提示框架：https://github.com/ybq/Android-SpinKit
+- 9.easypermissions动态权限: https://github.com/googlesamples/easypermissions
 
 ##### 多状态提示
 - 1.stateView: https://github.com/vlonjatg/progress-activity.git
@@ -30,6 +31,7 @@
 - 3.*工具库（支付、扫码、弹窗）： https://github.com/vondear/RxTool
 - 4.收款码：https://github.com/Exrick/xpay
 
+
 ##### 数据库
 - 1.mmkv: https://github.com/Tencent/MMKV
 - 2.realm: https://github.com/realm/realm-java
@@ -45,6 +47,7 @@
 - 1.Toasty：https://github.com/GrenderG/Toasty
 - 2.可定制的Dialog： https://github.com/afollestad/material-dialogs
 - 3.一行代码下载Apk: https://github.com/teprinciple/UpdateAppDemo
+- 4.EasyPopup弹窗：https://github.com/zyyoona7/EasyPopup
 
 ##### 图片：
 - 1.gif图片：https://github.com/koral--/android-gif-drawable
@@ -140,5 +143,11 @@
 #### 具有参考性的项目
 - 1.今日头条：https://github.com/chaychan/TouTiao
 - 2.足球项目：https://github.com/wangjian1154/FootballApp
+- 3.新闻类很好的mvp架构：https://github.com/Peakmain/gankzhihu
+- 4.DialogFragment弹窗封装：https://github.com/developerHaoz/DialogFragmentDemos
+- 5.万能的Dialog：https://github.com/AnthonyCoder/PowerfulDialog
+- 6.通用的PopupWindow: https://github.com/crazyqiang/AndroidStudy
+- 7.建造者模式衍生的全局Dialog: https://github.com/YuanTiger/Design-Pattern/blob/master/app/src/main/java/com/my/designdemo/design/builder/dialog/DialogProduct.java
+- 8.tags: https://github.com/ithedan/CustomRadioGroupTag
 
 

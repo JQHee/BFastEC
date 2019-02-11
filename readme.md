@@ -162,5 +162,6 @@
 - 7.建造者模式衍生的全局Dialog: https://github.com/YuanTiger/Design-Pattern/blob/master/app/src/main/java/com/my/designdemo/design/builder/dialog/DialogProduct.java
 - 8.tags: https://github.com/ithedan/CustomRadioGroupTag
 - 9.aidl 不同进程之间进行数据通信
+- 10.全面屏、刘海屏适配：https://blog.csdn.net/DJY1992/article/details/80689632
 
 

@@ -165,6 +165,9 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 4.安卓插件生成模型：gsonformat 支持gson、fastjson等
 - 5.图片高质量压缩：https://www.jianshu.com/p/f305fb008ab6
 - 6.apk优化：https://www.jianshu.com/p/244910d4e942
+- 7.java文件头的注释修改：https://www.jianshu.com/p/6dde8bcd5ed7
+- 8..9图片制作：https://www.jianshu.com/p/803b62730218
+- 9.apk下载安装：https://www.jianshu.com/p/e3b33f57bc8d
 
 #### 四、具有参考性的项目
 - 1.今日头条：https://github.com/chaychan/TouTiao
@@ -217,6 +220,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 
 ##### android 8.0适配
 - 参考：https://blog.csdn.net/qq_17766199/article/details/80965631
+- 应用图片适配：https://www.jianshu.com/p/e593515cbf87
 
 ##### android 7.0适配
 - 参考：https://blog.csdn.net/qq_17766199/article/details/77404712

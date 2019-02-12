@@ -94,6 +94,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 4.RecyclerBanner：https://github.com/amy993/RecyclerBanner
 - 5.XBanner：https://github.com/xiaohaibin/XBanner
 - 6.banner 已经有段时间不维护了: https://github.com/youth5201314/banner
+- 7.引导页：https://github.com/Cleveroad/SlidingTutorial-Android
 
 ##### 跑马灯
 - 1.MarqueeView: https://github.com/sunfusheng/MarqueeView

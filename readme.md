@@ -19,9 +19,20 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 6.页面显示奔溃日志：https://github.com/maning0303/MNCrashMonitor
 - 7.Toast 弹窗提示：https://github.com/bboylin/UniversalToast
 - 8.加载提示框架：https://github.com/ybq/Android-SpinKit
-- 9.通用导航栏：https://github.com/getActivity/TitleBar
-- 10.解决关闭通知toast弹不出来： https://github.com/getActivity/ToastUtils
+- 9.解决关闭通知toast弹不出来： https://github.com/getActivity/ToastUtils
 
+
+##### 状态栏
+- 1.ImmersionBar：https://github.com/gyf-dev/ImmersionBar
+- 2.通用导航栏：https://github.com/getActivity/TitleBar
+- 2.StatusBarUtil: https://github.com/laobie/StatusBarUtil
+
+
+##### popupWindow&Dialog
+- 1.EasyPopup: https://github.com/zyyoona7/EasyPopup
+- 2.BasePopup: https://github.com/razerdp/BasePopup
+- 3.XPopup: https://github.com/li-xiaojun/XPopup
+- 4.dialogplus: https://github.com/orhanobut/dialogplus
 
 ##### 二维码扫描
 - 1.*工具库（支付、扫码、弹窗）： https://github.com/vondear/RxTool

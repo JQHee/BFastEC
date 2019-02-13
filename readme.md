@@ -34,6 +34,10 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 3.XPopup: https://github.com/li-xiaojun/XPopup
 - 4.dialogplus: https://github.com/orhanobut/dialogplus
 
+##### 下载器
+- 1.Aria：https://github.com/AriaLyy/Aria
+- 2.FileDownloader：https://github.com/lingochamp/FileDownloader
+
 ##### 二维码扫描
 - 1.*工具库（支付、扫码、弹窗）： https://github.com/vondear/RxTool
 - 2.barcodescanner 封装有zbar(c语言)、zxing: https://github.com/dm77/barcodescanner
@@ -44,6 +48,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 1.easypermissions动态权限: https://github.com/googlesamples/easypermissions
 - 2.权限：https://github.com/permissions-dispatcher/PermissionsDispatcher
 - 3.权限库：https://github.com/tbruyelle/RxPermissions.git
+- 4.AndPermission: https://github.com/yanzhenjie/AndPermission
 
 
 ##### 分页tab查看

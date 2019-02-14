@@ -37,6 +37,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 ##### 下载器
 - 1.Aria：https://github.com/AriaLyy/Aria
 - 2.FileDownloader：https://github.com/lingochamp/FileDownloader
+- 3.apk下载：https://blog.csdn.net/qq_34261214/article/details/81487110
 
 ##### 二维码扫描
 - 1.*工具库（支付、扫码、弹窗）： https://github.com/vondear/RxTool

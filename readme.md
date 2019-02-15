@@ -238,6 +238,9 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 好用的UI适配方案：https://www.jianshu.com/p/1302ad5a4b04
 - 参考：https://www.jianshu.com/p/1302ad5a4b04
 
+##### 约束布局（减少嵌套，提高性能）
+- 实战：https://www.jianshu.com/p/f110b4fcfe93
+
 ##### 全面屏和刘海屏适配
 1.全面屏适配
 `AndroidManifest.xml`中的`application`配置 `android:resizeableActivity="true"`

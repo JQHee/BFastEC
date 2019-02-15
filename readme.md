@@ -207,6 +207,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 
 
 #### 三、优化
+- 0.使用插件优化代码：https://www.jianshu.com/p/2b8d34b2267c
 - 1.内测泄漏检测：https://github.com/square/leakcanary
 - 2.网络调试工具需要翻墙：https://github.com/facebook/stetho
 - 3.dex65535文件报错multidex：implementation 'com.android.support:multidex:1.0.1'

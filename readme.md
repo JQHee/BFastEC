@@ -231,6 +231,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 8.tags: https://github.com/ithedan/CustomRadioGroupTag
 - 9.aidl 不同进程之间进行数据通信
 - 10.全面屏、刘海屏适配：https://blog.csdn.net/DJY1992/article/details/80689632  &   https://github.com/LuckyYangChen/AdaptNotch
+- 11、引导页制作：https://www.jianshu.com/p/adb21180862a
 
 
 #### 五、适配
@@ -243,6 +244,8 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 ##### 约束布局（减少嵌套，提高性能）
 - 实战：https://www.jianshu.com/p/f110b4fcfe93
 - 实战: https://blog.csdn.net/vicwudi/article/details/81254371
+- 实战：https://blog.csdn.net/lingjianglin/article/details/81835110
+- activity手写布局：https://www.jianshu.com/p/7888cde8292f
 
 ##### 全面屏和刘海屏适配
 1.全面屏适配

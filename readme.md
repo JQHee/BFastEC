@@ -88,6 +88,7 @@
 - 3.图片选择器：https://github.com/Lichenwei-Dev/ImagePicker
 - 4.图片选取器：https://github.com/donkingliang/ImageSelector
 - 5.图片选取器：https://github.com/bingoogolapple/BGAPhotoPicker-Android
+- 6.多文件选择：https://github.com/fishwjy/MultiType-FilePicker
 
 ##### 视频播放器：
 - 1.节操播放器：https://github.com/lipangit/JiaoZiVideoPlayer

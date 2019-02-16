@@ -242,6 +242,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 
 ##### 约束布局（减少嵌套，提高性能）
 - 实战：https://www.jianshu.com/p/f110b4fcfe93
+- 实战: https://blog.csdn.net/vicwudi/article/details/81254371
 
 ##### 全面屏和刘海屏适配
 1.全面屏适配

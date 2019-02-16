@@ -247,6 +247,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 实战：https://blog.csdn.net/lingjianglin/article/details/81835110
 - activity手写布局：https://www.jianshu.com/p/7888cde8292f
 - addview: http://xgfe.github.io/2017/09/17/ivanchou/layout-with-constraintlayout-by-programming/
+- 补充：https://blog.csdn.net/xu404741377/article/details/79480802?utm_source=blogxgwz2
 
 ##### 全面屏和刘海屏适配
 1.全面屏适配

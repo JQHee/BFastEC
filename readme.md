@@ -21,6 +21,9 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 8.加载提示框架：https://github.com/ybq/Android-SpinKit
 - 9.解决关闭通知toast弹不出来： https://github.com/getActivity/ToastUtils
 
+##### 使用引导
+- NewbieGuide：https://github.com/huburt-Hu/NewbieGuide
+- 动态添加引导页：https://github.com/q296494327/GuidePage
 
 ##### 状态栏
 - 1.ImmersionBar：https://github.com/gyf-dev/ImmersionBar

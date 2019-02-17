@@ -20,10 +20,17 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 7.Toast 弹窗提示：https://github.com/bboylin/UniversalToast
 - 8.加载提示框架：https://github.com/ybq/Android-SpinKit
 - 9.解决关闭通知toast弹不出来： https://github.com/getActivity/ToastUtils
+- 10.仿微信朋友圈列表：https://www.jianshu.com/p/37a34a58b0c7
+- 11.
+
+##### 组件化
+- 1.toolbar: https://www.jianshu.com/p/671c370cb9ed
+- 2.路由：https://github.com/alibaba/ARouter
+- 3.日志收集：https://www.jianshu.com/p/59bc2784379f
 
 ##### 使用引导
-- NewbieGuide：https://github.com/huburt-Hu/NewbieGuide
-- 动态添加引导页：https://github.com/q296494327/GuidePage
+- 1.NewbieGuide：https://github.com/huburt-Hu/NewbieGuide
+-2.动态添加引导页：https://github.com/q296494327/GuidePage
 
 ##### 状态栏
 - 1.ImmersionBar：https://github.com/gyf-dev/ImmersionBar
@@ -133,6 +140,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 5.XBanner：https://github.com/xiaohaibin/XBanner
 - 6.banner 已经有段时间不维护了: https://github.com/youth5201314/banner
 - 7.引导页：https://github.com/Cleveroad/SlidingTutorial-Android
+- 8.轮播图：https://github.com/pinguo-zhouwei/MZBannerView
 
 
 ##### 跑马灯
@@ -219,8 +227,11 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 5.图片高质量压缩：https://www.jianshu.com/p/f305fb008ab6
 - 6.apk优化：https://www.jianshu.com/p/244910d4e942
 - 7.java文件头的注释修改：https://www.jianshu.com/p/6dde8bcd5ed7
-- 8..9图片制作：https://www.jianshu.com/p/803b62730218
+- 8..9图片制作：https://www.jianshu.com/p/803b62730218 & https://www.jianshu.com/p/3fd048644e3f
 - 9.apk下载安装：https://www.jianshu.com/p/e3b33f57bc8d
+- 10.加快gradle编译速度：https://www.jianshu.com/p/200d55b4d40a
+- 11.打造输入自己的AS插件：https://www.jianshu.com/p/bf54eddfba6e
+- 12.欢迎页优化SplashFragment+StubView：https://www.jianshu.com/p/add0d4a03914 & https://blog.csdn.net/chenliguan/article/details/53997436
 
 
 #### 四、具有参考性的项目
@@ -251,6 +262,8 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - activity手写布局：https://www.jianshu.com/p/7888cde8292f
 - addview: http://xgfe.github.io/2017/09/17/ivanchou/layout-with-constraintlayout-by-programming/
 - 补充：https://blog.csdn.net/xu404741377/article/details/79480802?utm_source=blogxgwz2
+- *约束布局一：https://www.jianshu.com/p/0e0d440f9c2f
+- *约束布局二：https://www.jianshu.com/p/35896a8abb35
 
 ##### 全面屏和刘海屏适配
 1.全面屏适配

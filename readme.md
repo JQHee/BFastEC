@@ -200,7 +200,12 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 4.RxJava:  https://github.com/ReactiveX/RxJava
 - 5.RxAndroid:  https://github.com/ReactiveX/RxAndroid
 - 6.Rx生命周期：https://github.com/trello/RxLifecycle
-- 7.事件总线RxBus: https://github.com/AndroidKnife/RxBus
+
+
+##### 事件总线
+- 1.事件总线RxBus: https://github.com/AndroidKnife/RxBus
+- 1.事件总线EventBus: https://github.com/greenrobot/EventBus
+- 3.LiveData: https://www.jianshu.com/p/9677b7a584bb
 
 
 ##### 图表
@@ -231,7 +236,8 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 9.apk下载安装：https://www.jianshu.com/p/e3b33f57bc8d
 - 10.加快gradle编译速度：https://www.jianshu.com/p/200d55b4d40a
 - 11.打造输入自己的AS插件：https://www.jianshu.com/p/bf54eddfba6e
-- 12.欢迎页优化SplashFragment+StubView：https://www.jianshu.com/p/add0d4a03914 & https://blog.csdn.net/chenliguan/article/details/53997436
+- 12.欢迎页优化SplashFragment+StubView：https://www.jianshu.com/p/add0d4a03914 & https://blog.csdn.net/chenliguan/article/details/53997436 & 源码：https://github.com/kpioneer123/SplashOptimize
+- 13.图片文件目录drawable 和 mipmap 说明：https://www.jianshu.com/p/68ae4aa43648
 
 
 #### 四、具有参考性的项目

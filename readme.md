@@ -36,6 +36,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 1.toolbar: https://www.jianshu.com/p/671c370cb9ed
 - 2.路由：https://github.com/alibaba/ARouter
 - 3.日志收集：https://www.jianshu.com/p/59bc2784379f
+- 4. 不得不知的自带组件： LiveData(时间总线，用法与Rxjava类似，也可使用Rxjava替代)、ViewModel(ViewModel 是一个框架组件。它为 UI 组件 (fragment或activity) 提供数据，并且可以调用其它组件加载数据或者转发用户指令。)、Room(持久化数据)
 
 ##### 使用引导
 - 1.NewbieGuide：https://github.com/huburt-Hu/NewbieGuide
@@ -82,10 +83,6 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 ##### 多状态提示
 - 1.stateView: https://github.com/vlonjatg/progress-activity.git
 - 2.MultipleStatusView：https://github.com/qyxxjd/MultipleStatusView
-
-
-##### 事件总线
-- 1.EventBus： https://github.com/greenrobot/EventBus
 
 
 ##### 刷新框架：
@@ -216,7 +213,6 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 1.事件总线RxBus: https://github.com/AndroidKnife/RxBus
 - 1.事件总线EventBus: https://github.com/greenrobot/EventBus
 - 3.LiveData: https://www.jianshu.com/p/9677b7a584bb
-
 
 ##### 图表
 - 1.MPAndroidChart：https://github.com/PhilJay/MPAndroidChart

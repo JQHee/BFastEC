@@ -258,6 +258,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 9.aidl 不同进程之间进行数据通信
 - 10.全面屏、刘海屏适配：https://blog.csdn.net/DJY1992/article/details/80689632  &   https://github.com/LuckyYangChen/AdaptNotch
 - 11、引导页制作：https://www.jianshu.com/p/adb21180862a
+- 12、LiveData 使用: https://github.com/SelfZhangTQ/T-MVVM
 
 
 #### 五、适配

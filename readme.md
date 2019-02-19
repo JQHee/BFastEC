@@ -36,7 +36,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 1.toolbar: https://www.jianshu.com/p/671c370cb9ed
 - 2.路由：https://github.com/alibaba/ARouter
 - 3.日志收集：https://www.jianshu.com/p/59bc2784379f
-- 4. 不得不知的自带组件： LiveData(时间总线，用法与Rxjava类似，也可使用Rxjava替代)、ViewModel(ViewModel 是一个框架组件。它为 UI 组件 (fragment或activity) 提供数据，并且可以调用其它组件加载数据或者转发用户指令。)、Room(持久化数据)
+- 4. 不得不知的自带组件： LiveData(时间总线，用法与Rxjava类似，也可使用Rxjava替代)、ViewModel(ViewModel 是一个框架组件。它为 UI 组件 (fragment或activity) 提供数据，并且可以调用其它组件加载数据或者转发用户指令。)、Room(持久化数据)  参考链接：https://www.jianshu.com/p/48df7dd49454
 
 ##### 使用引导
 - 1.NewbieGuide：https://github.com/huburt-Hu/NewbieGuide

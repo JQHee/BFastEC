@@ -30,6 +30,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 3.城市选择：https://github.com/zaaach/CityPicker
 - 4.RadioButton 自定义： https://github.com/zaaach/TabRadioButton
 - 5.qq加号菜单：https://github.com/zaaach/TopRightMenu
+- 6. StackLabel 类似flowlayout布局: https://github.com/kongzue/StackLabel
 
 ##### 组件化
 - 1.toolbar: https://www.jianshu.com/p/671c370cb9ed
@@ -51,6 +52,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 2.BasePopup: https://github.com/razerdp/BasePopup
 - 3.XPopup: https://github.com/li-xiaojun/XPopup
 - 4.dialogplus: https://github.com/orhanobut/dialogplus
+- 5.小巧Dialog: https://github.com/kongzue/Dialog
 
 ##### 下载器
 - 1.Aria：https://github.com/AriaLyy/Aria

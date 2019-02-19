@@ -23,6 +23,10 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 10.仿微信朋友圈列表：https://www.jianshu.com/p/37a34a58b0c7
 - 11.
 
+##### 常用的小组件
+- 1.城市、联系人选择：https://github.com/YoKeyword/IndexableRecyclerView
+- 2.城市选择（有定位、开通城市、城市列表）：https://blog.csdn.net/meixi_android/article/details/80076065
+
 ##### 组件化
 - 1.toolbar: https://www.jianshu.com/p/671c370cb9ed
 - 2.路由：https://github.com/alibaba/ARouter

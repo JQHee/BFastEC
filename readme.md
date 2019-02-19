@@ -24,8 +24,12 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 11.
 
 ##### 常用的小组件
+- 0.汉字转拼音：https://github.com/promeG/TinyPinyin
 - 1.城市、联系人选择：https://github.com/YoKeyword/IndexableRecyclerView
 - 2.城市选择（有定位、开通城市、城市列表）：https://blog.csdn.net/meixi_android/article/details/80076065
+- 3.城市选择：https://github.com/zaaach/CityPicker
+- 4.RadioButton 自定义： https://github.com/zaaach/TabRadioButton
+- 5.qq加号菜单：https://github.com/zaaach/TopRightMenu
 
 ##### 组件化
 - 1.toolbar: https://www.jianshu.com/p/671c370cb9ed

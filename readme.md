@@ -313,6 +313,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 ##### android 8.0适配
 - 参考：https://blog.csdn.net/qq_17766199/article/details/80965631
 - 应用图片适配：https://www.jianshu.com/p/e593515cbf87
+- 关于透明、强制横、竖屏某一引起的闪退：https://www.jianshu.com/p/d0d907754603
 
 ##### android 7.0适配
 - 参考：https://blog.csdn.net/qq_17766199/article/details/77404712

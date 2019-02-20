@@ -129,6 +129,8 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 5.picasso图片下载: https://github.com/square/picasso
 - 6.图片压缩Luban： https://github.com/Curzibn/Luban
 - 7.图片压缩Compressor：https://github.com/zetbaitsu/Compressor
+- 8.大图查看，防止OOM: https://github.com/davemorrissey/subsampling-scale-image-view
+- 9.多图上传显示：https://www.jianshu.com/p/281fd392870b
 
 
 ##### 布局：

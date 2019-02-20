@@ -9,6 +9,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 比较打包的签名MD5的值是否一致：
 - https://www.jianshu.com/p/ce4089dd653e
 - https://www.jianshu.com/p/db709a280d9a
+- 获取签名信息：https://blog.csdn.net/qq_28484355/article/details/70158395
 
 #### 二、第三方框架整理
 

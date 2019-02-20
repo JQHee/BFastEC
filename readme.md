@@ -11,6 +11,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - https://www.jianshu.com/p/db709a280d9a
 - 获取签名信息：https://blog.csdn.net/qq_28484355/article/details/70158395
 - 反编译获取资源文件：https://www.jianshu.com/p/dda9ff90a3c5
+- 使用as自带终端命令获取签名信息：keytool -list -v -keystore xxx.jks
 
 #### 二、第三方框架整理
 

@@ -21,7 +21,6 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 8.加载提示框架：https://github.com/ybq/Android-SpinKit
 - 9.解决关闭通知toast弹不出来： https://github.com/getActivity/ToastUtils
 - 10.仿微信朋友圈列表：https://www.jianshu.com/p/37a34a58b0c7
-- 11.
 
 ##### 常用的小组件
 - 0.汉字转拼音：https://github.com/promeG/TinyPinyin
@@ -122,6 +121,7 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 1.gif图片：https://github.com/koral--/android-gif-drawable
 - 2.圆形图片：https://github.com/hdodenhof/CircleImageView
 - 3.图片剪裁：https://github.com/Yalantis/uCrop
+- 3.1.SmartCropper图片剪裁：https://github.com/pqpo/SmartCropper
 - 4.glide图片下载：https://github.com/bumptech/glide
 - 5.picasso图片下载: https://github.com/square/picasso
 - 6.图片压缩Luban： https://github.com/Curzibn/Luban

@@ -22,6 +22,9 @@ Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Si
 - 9.解决关闭通知toast弹不出来： https://github.com/getActivity/ToastUtils
 - 10.仿微信朋友圈列表：https://www.jianshu.com/p/37a34a58b0c7
 
+##### 拍照、图片选择
+- 1.TakePhoto：https://github.com/crazycodeboy/TakePhoto/
+
 ##### 常用的小组件
 - 0.汉字转拼音：https://github.com/promeG/TinyPinyin
 - 1.城市、联系人选择：https://github.com/YoKeyword/IndexableRecyclerView

@@ -1,10 +1,13 @@
 #### 一、打包加固说明
-1.多渠道打包加固->爱加密
+1.多渠道打包加固 -> 爱加密：http://www.ijiami.cn
 2.腾讯乐固 https://console.cloud.tencent.com/ms/reinforce/tool
 
 V1：可对签名后的文件，作适当修改，并重新压缩。
 V2：不能对签名后的 APK作任何修改，包括 zipalign。因为它是针对字节进行的签名，所以任何改动都会影响最终结果。
 Signature Versions不能只选择 V2(Full APK Signature)，应该选择V1(Jar Signature)，或者选择 V1和 V2。
+
+多渠道打包：
+- https://blog.csdn.net/johnny901114/article/details/48714849
 
 比较打包的签名MD5的值是否一致：
 - https://www.jianshu.com/p/ce4089dd653e

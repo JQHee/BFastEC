@@ -266,9 +266,9 @@ apk体积优化：
 
 
 #### 四、具有参考性的项目
-- 1.今日头条：https://github.com/chaychan/TouTiao
-- 2.足球项目：https://github.com/wangjian1154/FootballApp
-- 3.*新闻类很好的mvp架构：https://github.com/Peakmain/gankzhihu
+- 1.今日头条RxJava + Retrofit + MVP：https://github.com/chaychan/TouTiao
+- 2.足球项目RxJava+Retrofit+MVP：https://github.com/wangjian1154/FootballApp
+- 3.*新闻类很好的mvp架构MVP + RxJava + Retrofit+ARouter+Dagger2：https://github.com/Peakmain/gankzhihu
 - 4.DialogFragment弹窗封装：https://github.com/developerHaoz/DialogFragmentDemos
 - 5.万能的Dialog：https://github.com/AnthonyCoder/PowerfulDialog
 - 6.通用的PopupWindow: https://github.com/crazyqiang/AndroidStudy
@@ -345,4 +345,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - Optional  有效的避免空指针错误
 - 避免空指针异常：https://www.jianshu.com/p/461eb574b2fc
 
+##### 模拟器
+- 上传文件到模拟器中：https://blog.csdn.net/whdAlive/article/details/80686807
+- 查看模拟器的文件目录：https://blog.csdn.net/arldrz/article/details/77651665
 

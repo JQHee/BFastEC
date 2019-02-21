@@ -349,3 +349,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - 上传文件到模拟器中：https://blog.csdn.net/whdAlive/article/details/80686807
 - 查看模拟器的文件目录：https://blog.csdn.net/arldrz/article/details/77651665
 
+
+#### 六、进阶
+- 1.Glide: 添加下载进度监听： https://www.jianshu.com/p/61a0761e6e81
+

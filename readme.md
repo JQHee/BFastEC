@@ -194,6 +194,7 @@ apk体积优化：
 - 4.图片选取器：https://github.com/donkingliang/ImageSelector
 - 5.图片选取器：https://github.com/bingoogolapple/BGAPhotoPicker-Android
 - 6.多文件选择：https://github.com/fishwjy/MultiType-FilePicker
+- 7.图片选择：https://github.com/jeasonlzy/ImagePicker
 
 
 ##### 视频播放器：

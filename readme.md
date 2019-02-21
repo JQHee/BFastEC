@@ -330,13 +330,18 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 
 ##### android 8.0适配
 - 参考：https://blog.csdn.net/qq_17766199/article/details/80965631
-- 应用图片适配：https://www.jianshu.com/p/e593515cbf87
+- 应用图片适配：https://www.jianshu.com/p/e593515cbf87 & https://www.jianshu.com/p/25abce3f0492
 - 关于透明、强制横、竖屏某一引起的闪退：https://www.jianshu.com/p/d0d907754603
+- 通知栏适配：https://www.jianshu.com/p/39f33accd687
 
 ##### android 7.0适配
 - 参考：https://blog.csdn.net/qq_17766199/article/details/77404712
 
 ##### android 6.0适配
 1.动态权限申请适配
+
+##### jdk 8 的新特性
+- Optional  有效的避免空指针错误
+- 避免空指针异常：https://www.jianshu.com/p/461eb574b2fc
 
 

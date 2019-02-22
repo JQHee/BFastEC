@@ -271,6 +271,7 @@ apk体积优化：
 
 
 #### 四、具有参考性的项目
+- 0.AOP切面编程项目：https://github.com/north2016/T-MVP
 - 1.今日头条RxJava + Retrofit + MVP：https://github.com/chaychan/TouTiao
 - 2.足球项目RxJava+Retrofit+MVP：https://github.com/wangjian1154/FootballApp
 - 3.*新闻类很好的mvp架构MVP + RxJava + Retrofit+ARouter+Dagger2：https://github.com/Peakmain/gankzhihu

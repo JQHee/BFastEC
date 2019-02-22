@@ -22,6 +22,9 @@ apk体积优化：
 
 #### 二、第三方框架整理
 
+##### 代码模板
+- 模板工程：https://github.com/xwjie/PLMCodeTemplate
+
 ##### 面向AOP切面编程
 - 申请用于权限：https://github.com/crazyqiang/Aopermission
 - 通知某个方法的时间、调优：https://blog.csdn.net/wangwangli6/article/details/72820867

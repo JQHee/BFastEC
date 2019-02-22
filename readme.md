@@ -22,6 +22,10 @@ apk体积优化：
 
 #### 二、第三方框架整理
 
+##### 面向AOP切面编程
+- 申请用于权限：https://github.com/crazyqiang/Aopermission
+- 通知某个方法的时间、调优：https://blog.csdn.net/wangwangli6/article/details/72820867
+
 ##### 框架
 - 0.application入口文件优化：https://juejin.im/post/5b59a4e7e51d455f5f4cfa38
 - 1.底部导航tabbar：https://github.com/tyzlmjj/PagerBottomTabStrip

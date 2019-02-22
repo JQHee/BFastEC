@@ -45,7 +45,8 @@ apk体积优化：
 - 3.城市选择：https://github.com/zaaach/CityPicker
 - 4.RadioButton 自定义： https://github.com/zaaach/TabRadioButton
 - 5.qq加号菜单：https://github.com/zaaach/TopRightMenu
-- 6. StackLabel 类似flowlayout布局: https://github.com/kongzue/StackLabel
+- 6.StackLabel 类似flowlayout布局: https://github.com/kongzue/StackLabel
+- 7.联系人、城市列表索引条绘制：https://blog.csdn.net/a_zhon/article/details/53214849
 
 ##### 组件化
 - 1.toolbar: https://www.jianshu.com/p/671c370cb9ed
@@ -333,7 +334,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - 参考：https://blog.csdn.net/qq_17766199/article/details/80965631
 - 应用图片适配：https://www.jianshu.com/p/e593515cbf87 & https://www.jianshu.com/p/25abce3f0492
 - 关于透明、强制横、竖屏某一引起的闪退：https://www.jianshu.com/p/d0d907754603
-- 通知栏适配：https://www.jianshu.com/p/39f33accd687
+- 通知栏适配、拓展了应用角标、通知栏自定义：https://www.jianshu.com/p/39f33accd687 & https://www.jianshu.com/p/b83fc1697232
 
 ##### android 7.0适配
 - 参考：https://blog.csdn.net/qq_17766199/article/details/77404712

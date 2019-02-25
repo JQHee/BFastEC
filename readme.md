@@ -22,6 +22,10 @@ apk体积优化：
 
 #### 二、第三方框架整理
 
+##### 热更新
+- 1.Tinker热更新：https://www.jianshu.com/p/2674f7bd905f
+- 2.Bugly热更新：https://www.jianshu.com/p/9f393a4d3a2a
+
 ##### 代码模板
 - 后台模板工程：https://github.com/xwjie/PLMCodeTemplate
 
@@ -63,6 +67,7 @@ apk体积优化：
 - 2.路由：https://github.com/alibaba/ARouter (具体用法可参考 https://www.jianshu.com/p/6021f3f61fa6)
 - 3.日志收集：https://www.jianshu.com/p/59bc2784379f
 - 4. 不得不知的自带组件： LiveData(时间总线，用法与Rxjava类似，也可使用Rxjava替代)、ViewModel(ViewModel 是一个框架组件。它为 UI 组件 (fragment或activity) 提供数据，并且可以调用其它组件加载数据或者转发用户指令。)、Room(持久化数据)  参考链接：https://www.jianshu.com/p/48df7dd49454
+- 5.组件化搭建: https://www.jianshu.com/p/8dddeef229f9
 
 ##### 使用引导
 - 1.NewbieGuide：https://github.com/huburt-Hu/NewbieGuide

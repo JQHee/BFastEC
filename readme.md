@@ -348,7 +348,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - 参考：https://blog.csdn.net/qq_17766199/article/details/77404712
 
 ##### android 6.0适配
-1.动态权限申请适配
+- 1.动态权限申请适配
+
+##### 软键盘适配
+- 1.几种键盘遮挡输入框的适配方案：https://www.jianshu.com/p/ac7063e23b93
 
 ##### jdk 8 的新特性
 - Optional  有效的避免空指针错误

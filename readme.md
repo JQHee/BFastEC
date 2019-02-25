@@ -23,11 +23,14 @@ apk体积优化：
 #### 二、第三方框架整理
 
 ##### 代码模板
-- 模板工程：https://github.com/xwjie/PLMCodeTemplate
+- 后台模板工程：https://github.com/xwjie/PLMCodeTemplate
 
 ##### 面向AOP切面编程
+- 使用框架：https://github.com/HujiangTechnology/gradle_plugin_android_aspectjx
 - 申请用于权限：https://github.com/crazyqiang/Aopermission
 - 通知某个方法的时间、调优：https://blog.csdn.net/wangwangli6/article/details/72820867
+- AOP切面编程项目包含登录、动态权限申请拦截：https://github.com/north2016/T-MVP
+- 比较简单的说明、参数说明：https://www.cnblogs.com/weizhxa/p/8567942.html
 
 ##### 框架
 - 0.application入口文件优化：https://juejin.im/post/5b59a4e7e51d455f5f4cfa38

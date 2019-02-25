@@ -341,8 +341,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 ##### android 8.0适配
 - 参考：https://blog.csdn.net/qq_17766199/article/details/80965631
 - 应用图片适配：https://www.jianshu.com/p/e593515cbf87 & https://www.jianshu.com/p/25abce3f0492
-- 关于透明、强制横、竖屏某一引起的闪退：https://www.jianshu.com/p/d0d907754603
-- 通知栏适配、拓展了应用角标、通知栏自定义：https://www.jianshu.com/p/39f33accd687 & https://www.jianshu.com/p/b83fc1697232
+- 关于透明、强制横、竖屏某一引起的闪退：https://www.jianshu.com/p/d0d907754603 & https://www.jianshu.com/p/1ed07ddbbbe5
+- 通知栏适配、拓展了应用角标、通知栏自定义：https://www.jianshu.com/p/39f33accd687 & https://www.jianshu.com/p/b83fc1697232 & https://www.jianshu.com/p/839672499aaa
 
 ##### android 7.0适配
 - 参考：https://blog.csdn.net/qq_17766199/article/details/77404712

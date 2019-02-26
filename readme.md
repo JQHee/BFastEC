@@ -217,6 +217,12 @@ if (file_exists($file)) {
 - 1.Tinker热更新：https://www.jianshu.com/p/2674f7bd905f
 - 2.Bugly热更新：https://www.jianshu.com/p/9f393a4d3a2a
 
+##### MVP的变形
+- View绑定多个Presenter: https://github.com/lizixian18/EasyMvp
+- MVP脚手架工具：
+    1、java： https://github.com/githubwing/MVPHelper
+    2、kotlin: https://github.com/y1xian/KotlinMvp
+
 ##### 代码模板
 - 后台模板工程：https://github.com/xwjie/PLMCodeTemplate
 

@@ -196,17 +196,24 @@ ext {
 
 php提供的下载apk接口无法获取apk总大小的问题
 ```
-// 这个没问题
-$file = 'sf.jpg';
-if (file_exists($file)) {
-    header('Content-Description: File Transfer');
-    header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename="'.basename($file).'"');
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate');
-    header('Pragma: public');
-    header('Content-Length: ' . filesize($file));
-    readfile($file);
+//下载apk
+function downloads($filename)
+{
+    $header = get_headers($filename, 1);
+    $size = $header['Content-Length'];
+    $showname = "download.apk";
+    // 下面两个必须配置，否则无法获取下载 Content-Length
+    header('Connection: keep-alive');
+    header('Content-Encoding: none');
+    // header("Content-type: text/plain");
+    header("Content-Type: application/octet-stream");
+    header("Accept-Ranges: bytes");
+    header("Content-Disposition: attachment; filename=".$showname);
+    // header("Cache-Control: must-revalidate, post-check=0, pre-check=0" );
+    // header("Pragma: public" );
+    header("Accept-Length:".$size);
+    header('Content-Length: ' . $size);
+    echo readfile($filename);
     exit;
 }
 ```

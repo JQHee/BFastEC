@@ -245,6 +245,7 @@ if (file_exists($file)) {
 - 8.加载提示框架：https://github.com/ybq/Android-SpinKit
 - 9.解决关闭通知toast弹不出来： https://github.com/getActivity/ToastUtils
 - 10.仿微信朋友圈列表：https://www.jianshu.com/p/37a34a58b0c7
+- 11.带动画的底部导航：https://github.com/Ashok-Varma/BottomNavigation
 
 ##### 拍照、图片选择
 - 1.TakePhoto：https://github.com/crazycodeboy/TakePhoto/

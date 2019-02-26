@@ -196,26 +196,30 @@ ext {
 
 php提供的下载apk接口无法获取apk总大小的问题
 ```
-//下载apk
-function downloads($filename)
-{
-    $header = get_headers($filename, 1);
-    $size = $header['Content-Length'];
-    $showname = "download.apk";
-    // 下面两个必须配置，否则无法获取下载 Content-Length
-    header('Connection: keep-alive');
-    header('Content-Encoding: none');
-    // header("Content-type: text/plain");
-    header("Content-Type: application/octet-stream");
-    header("Accept-Ranges: bytes");
-    header("Content-Disposition: attachment; filename=".$showname);
-    // header("Cache-Control: must-revalidate, post-check=0, pre-check=0" );
-    // header("Pragma: public" );
-    header("Accept-Length:".$size);
-    header('Content-Length: ' . $size);
-    echo readfile($filename);
-    exit;
-}
+    public  function  download() {
+        $fileURL = ROOT_PATH."public/apk/test.apk";
+        $this -> downloads($fileURL);
+
+        // return $this ->fetch();
+    }
+
+    //下载apk
+    function downloads($filename) {
+        $file = fopen($filename, 'r');
+        $size = filesize($filename);
+        $showname = "download.apk";
+        header("Content-type: text/plain");
+        header("Accept-Ranges: bytes");
+        header("Content-Disposition: attachment; filename=".$showname);
+        header("Cache-Control: must-revalidate, post-check=0, pre-check=0" );
+        header("Pragma: public" );
+        header("Accept-Length:".$size);
+        header('Content-Length: ' . $size);
+        echo readfile($filename);
+        // echo fread($file, $size);
+        // fcolse($file);
+        exit;
+    }
 ```
 
 #### 二、第三方框架整理

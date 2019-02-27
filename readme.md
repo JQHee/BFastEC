@@ -429,6 +429,7 @@ php提供的下载apk接口无法获取apk总大小的问题
 - 11.引导页制作：https://www.jianshu.com/p/adb21180862a
 - 12.LiveData 使用: https://github.com/SelfZhangTQ/T-MVVM
 - 13.kotlin学习项目: https://github.com/iceCola7/WanAndroid
+- 14.本地文件ppt等文件浏览：https://github.com/sky8650/TbsForOffice
 
 
 #### 五、适配

@@ -200,6 +200,7 @@ php提供的下载apk接口无法获取apk总大小的问题
 - 3.日志收集：https://www.jianshu.com/p/59bc2784379f
 - 4. 不得不知的自带组件： LiveData(时间总线，用法与Rxjava类似，也可使用Rxjava替代)、ViewModel(ViewModel 是一个框架组件。它为 UI 组件 (fragment或activity) 提供数据，并且可以调用其它组件加载数据或者转发用户指令。)、Room(持久化数据)  参考链接：https://www.jianshu.com/p/48df7dd49454
 - 5.组件化搭建: https://www.jianshu.com/p/8dddeef229f9
+- 6.kotlin: 实现组件化：https://juejin.im/post/5c69650051882562621736d7
 
 ##### 使用引导
 - 1.NewbieGuide：https://github.com/huburt-Hu/NewbieGuide

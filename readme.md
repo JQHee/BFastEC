@@ -224,6 +224,9 @@ php提供的下载apk接口无法获取apk总大小的问题
 
 #### 二、第三方框架整理
 
+##### 平板应用
+- 1.https://github.com/liuhaidong123
+
 ##### 热更新
 - 1.Tinker热更新：https://www.jianshu.com/p/2674f7bd905f
 - 2.Bugly热更新：https://www.jianshu.com/p/9f393a4d3a2a

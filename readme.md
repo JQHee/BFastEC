@@ -25,173 +25,93 @@ gradle config.gradle 全局配置  (参考：https://www.jianshu.com/p/246542472
 ```
 // 其他模块引入（头部声明）
 def ext = rootProject.ext
-def version = ext.versions
-def dependencie = ext.dependencies
+def android = ext.android
+def dependVersion = ext.dependVersion
 
 //v7包和v4包
-api dependencie.appcompat_v7
-api dependencie.support_v4
+// Support库
+api rootProject.ext.supportLibs
+// 网络请求库
+api rootProject.ext.networkLibs
+// RxJava2
+api rootProject.ext.rxJavaLibs
+// commonLibs
+api rootProject.ext.commonLibs
 ```
 ```
 ext {
-    versions = [
-            compileSdkVersion        : 28,
-            minSdkVersion            : 15,
-            targetSdkVersion         : 26,
-            versionCode              : 27,
-            versionName              : "1.4.0",
-
-            junit                    : "4.12",
-            runner                   : "1.0.1",
-            espresso_core            : "3.0.1",
-
-            support                  : "26.1.0",
-            constraint_layout        : "1.0.2",
-
-            //Kotlin
-            kotlin_version           : '1.2.30',
-
-            //多分包
-            multidex                 : '1.0.2',
-
-            //ARouter
-            arouter_api              : '1.3.1',
-            arouter_compiler         : '1.1.4',
-            arouter_annotation       : '1.0.4',
-
-            //Logger
-            logger                   : '2.1.1',
-            //dagger
-            dagger2                  : '2.15',
-            dagger2_compiler         : '2.15',
-
-            //Glide
-            glide                    : '3.7.0',
-            //图片轮播器
-            banner                   : '1.4.10',
-
-            //Rx
-            rxjava                   : '2.1.3',
-            rxandroid2               : '2.0.1',
-            rxlifecycle_components   : '2.2.0',
-            rxlifecycle              : '2.2.0',
-            //Ok
-            okhttp3                  : '3.10.0',
-            okhttp3_logging          : '3.10.0',
-            okio                     : '1.14.0',
-
-            //retrofit2
-            retrofit2                : '2.3.0',
-            retrofit2_adapter_rxjava2: '2.3.0',
-            retrofit2_converter_gson : '2.1.0',
-
-            //Gson  https://github.com/google/gson
-            gson                     : '2.8.2',
-            //对Recycle中Adapter的进行的抽离
-            recycle_adapter          : '2.9.30',
-            smart_refresh_layout     : "1.1.0-alpha-5",
-            //Eventbus Android端优化的publish/subscribe消息总线, https://github.com/greenrobot/EventBus
-            eventbus                 : '3.1.1',
-
-            //AOP AspectJ
-            aspectj                  : '1.8.9',
-            aspectjx                 : '1.0.10',
-
-            //黄油刀
-            butterknife              : '8.4.0',
-            butterknife_compiler     : '8.4.0',
-
-            //个推 推送
-            getui                    : "2.11.1.0",
-
-            //热修复
-            bugly                    : '1.3.4',
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 16,
+            targetSdkVersion : 27,
+            versionCode      : 1,
+            versionName      : "1.0.0"
     ]
-
-    appID = [
-            "app": "com.rd.boruijinfu"//正确的包名
-//            "app": "com.rd.boruijinfu_test"//调式的包名
-
+    dependVersion = [
+            androidSupportSdkVersion: "28.0.0",
+            espressoSdkVersion      : "3.0.2",
+            retrofitSdkVersion      : "2.4.0",
+            glideSdkVersion         : "4.8.0",
+            rxJava                  : "2.2.2",
+            rxAndroid               : "2.1.0",
+            rxKotlin                : "2.3.0",
+            anko                    : "0.10.7"
     ]
-
-    dependencies = [
-            junit                    : "junit:junit:$versions.junit",
-            runner                   : "com.android.support.test:runner:$versions.runner",
-            core                     : "com.android.support.test.espresso:espresso-core:$versions.espresso_core",
-            //约束布局
-            constraint_layout        : "com.android.support.constraint:constraint-layout:$versions.constraint_layout",
-
-            appcompat_v7             : "com.android.support:appcompat-v7:$versions.support",
-            support_v4               : "com.android.support:support-v4:$versions.support",
-            design                   : "com.android.support:design:$versions.support",
-            cardview                 : "com.android.support:cardview-v7:$versions.support",
-            customtabs               : "com.android.support:customtabs:$versions.support",
-            recyclerview             : "com.android.support:recyclerview-v7:$versions.support",
-            percent                  : "com.android.support:percent:$versions.support",
-
-            //Kotlin
-            kotlin_stdlib_jdk8       : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin_version",
-            kotlin_gradle_plugin     : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin_version",
-
-            //dex
-            multidex                 : "com.android.support:multidex:$versions.multidex",
-
-            //ARouter https://github.com/alibaba/ARouter
-            arouter_api              : "com.alibaba:arouter-api:$versions.arouter_api",
-            arouter_compiler         : "com.alibaba:arouter-compiler:$versions.arouter_compiler",
-
-            //Log日志工具 https://github.com/orhanobut/logger
-            logger                   : "com.orhanobut:logger:$versions.logger",
-
-            //Dagger2
-            dagger2                  : "com.google.dagger:dagger:$versions.dagger2",
-            dagger2_compiler         : "com.google.dagger:dagger-compiler:$versions.dagger2_compiler",
-
-            //Glide 图像处理
-            glide                    : "com.github.bumptech.glide:glide:$versions.glide",
-            //一个强大的图片轮播控件
-            banner                   : "com.youth.banner:banner:$versions.banner",
-
-            //Rx https://github.com/ReactiveX/RxAndroid https://github.com/ReactiveX/RxJava
-            rxjava                   : "io.reactivex.rxjava2:rxjava:$versions.rxjava",
-            rxandroid2               : "io.reactivex.rxjava2:rxandroid:$versions.rxandroid2",
-            rxlifecycle_components   : "com.trello.rxlifecycle2:rxlifecycle-components:$versions.rxlifecycle_components",
-            rxlifecycle              : "com.trello.rxlifecycle2:rxlifecycle:$versions.rxlifecycle",
-            rxpermissions            : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar",
-            //Ok  https://github.com/square/okhttp
-            okhttp3                  : "com.squareup.okhttp3:okhttp:$versions.okhttp3",
-            okhttp3_logging          : "com.squareup.okhttp3:logging-interceptor:$versions.okhttp3_logging",
-            okio                     : "com.squareup.okio:okio:$versions.okio",
-
-            //retrofit https://github.com/square/retrofit
-            retrofit2                : "com.squareup.retrofit2:retrofit:$versions.retrofit2",
-            retrofit2_adapter_rxjava2: "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit2_adapter_rxjava2",
-            retrofit2_converter_gson : "com.squareup.retrofit2:converter-gson:$versions.retrofit2_converter_gson",
-
-            //Gson https://github.com/google/gson
-            gson                     : "com.google.code.gson:gson:$versions.gson",
-
-            //对Recycle中Adapter的进行的抽离 https://github.com/CymChad/BaseRecyclerViewAdapterHelper/releases
-            recycle_adapter          : "com.github.CymChad:BaseRecyclerViewAdapterHelper:$versions.recycle_adapter",
-            smart_refresh_layout     : "com.scwang.smartrefresh:SmartRefreshLayout:$versions.smart_refresh_layout",
-            //Eventbus Android端优化的publish/subscribe消息总线, https://github.com/greenrobot/EventBus
-            eventbus                 : "org.greenrobot:eventbus:$versions.eventbus",
-            aspectjtools             : "org.aspectj:aspectjtools:$versions.aspectj",
-            aspectjrt                : "org.aspectj:aspectjrt:$versions.aspectj",
-            aspectjx                 : "com.hujiang.aspectjx:gradle-android-plugin-aspectjx:$versions.aspectjx",
-
-            //黄油刀
-            butterknife              : "com.jakewharton:butterknife:$versions.butterknife",
-            butterknife_compiler     : "com.jakewharton:butterknife-compiler:$versions.butterknife_compiler",
-
-            //个推  推送
-            getui                    : "com.getui:sdk:2.12.3.0",
-
-            //热修复
-            bugly                    : "com.tencent.bugly:crashreport_upgrade:$versions.bugly",
-            bugly_nativecrashreport  : "com.tencent.bugly:nativecrashreport:latest.release"
+    supportDeps = [
+            "supportv4"        : "com.android.support:support-v4:${dependVersion.androidSupportSdkVersion}",
+            "appcompatv7"      : "com.android.support:appcompat-v7:${dependVersion.androidSupportSdkVersion}",
+            "cardview"         : "com.android.support:cardview-v7:${dependVersion.androidSupportSdkVersion}",
+            "design"           : "com.android.support:design:${dependVersion.androidSupportSdkVersion}",
+            "constraint-layout": "com.android.support.constraint:constraint-layout:1.1.3",
+            "annotations"      : "com.android.support:support-annotations:${dependVersion.androidSupportSdkVersion}"
     ]
+    retrofit = [
+            "retrofit"                : "com.squareup.retrofit2:retrofit:${dependVersion.retrofitSdkVersion}",
+            "retrofitConverterGson"   : "com.squareup.retrofit2:converter-gson:${dependVersion.retrofitSdkVersion}",
+            "retrofitAdapterRxjava2"  : "com.squareup.retrofit2:adapter-rxjava2:${dependVersion.retrofitSdkVersion}",
+            "okhttp3LoggerInterceptor": 'com.squareup.okhttp3:logging-interceptor:3.11.0',
+            "retrofitConverterMoshi"  : 'com.squareup.retrofit2:converter-moshi:2.4.0',
+            "retrofitKotlinMoshi"     : "com.squareup.moshi:moshi-kotlin:1.7.0"
+    ]
+    rxJava = [
+            "rxJava"   : "io.reactivex.rxjava2:rxjava:${dependVersion.rxJava}",
+            "rxAndroid": "io.reactivex.rxjava2:rxandroid:${dependVersion.rxAndroid}",
+            "rxKotlin" : "io.reactivex.rxjava2:rxkotlin:${dependVersion.rxKotlin}",
+            "anko"     : "org.jetbrains.anko:anko:${dependVersion.anko}"
+    ]
+    testDeps = [
+            "junit"                    : 'junit:junit:4.12',
+            "runner"                   : 'com.android.support.test:runner:1.0.2',
+            "espresso-core"            : "com.android.support.test.espresso:espresso-core:${dependVersion.espressoSdkVersion}",
+            "espresso-contrib"         : "com.android.support.test.espresso:espresso-contrib:${dependVersion.espressoSdkVersion}",
+            "espresso-intents"         : "com.android.support.test.espresso:espresso-intents:${dependVersion.espressoSdkVersion}",
+            "leakcanary-debug"         : 'com.squareup.leakcanary:leakcanary-android:1.6.1',
+            "leakcanary-release"       : 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1',
+            "leakcanary-debug-fragment": 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.1',
+            "debug-db"                 : 'com.amitshekhar.android:debug-db:1.0.4'
+    ]
+    commonDeps = [
+            "multidex": 'com.android.support:multidex:1.0.3',
+            "logger"  : 'com.orhanobut:logger:2.2.0',
+            "glide"   : 'com.github.bumptech.glide:glide:4.8.0',
+            "eventbus": 'org.greenrobot:eventbus:3.1.1',
+            "spinkit" : 'com.github.ybq:Android-SpinKit:1.2.0',
+            "arouter" : 'com.alibaba:arouter-api:1.4.0'
+    ]
+    otherDeps = [
+            "arouter-compiler": 'com.alibaba:arouter-compiler:1.2.1'
+    ]
+    supportLibs = supportDeps.values()
+    networkLibs = retrofit.values()
+    rxJavaLibs = rxJava.values()
+    commonLibs = commonDeps.values()
 }
+
+作者：iceCola7
+链接：https://juejin.im/post/5c69650051882562621736d7
+来源：掘金
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 php提供的下载apk接口无法获取apk总大小的问题

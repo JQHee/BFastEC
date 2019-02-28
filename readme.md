@@ -170,6 +170,9 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 1.Tinker热更新：https://www.jianshu.com/p/2674f7bd905f
 - 2.Bugly热更新：https://www.jianshu.com/p/9f393a4d3a2a
 
+##### Github app 实现 Redux
+- PocketHub: https://github.com/pockethub/PocketHub
+
 ##### MVP的变形
 - View绑定多个Presenter: https://github.com/lizixian18/EasyMvp
 - MVP脚手架工具：

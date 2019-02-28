@@ -190,7 +190,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 比较简单的说明、参数说明：https://www.cnblogs.com/weizhxa/p/8567942.html
 
 ##### 框架
-- 0.application入口文件优化：https://juejin.im/post/5b59a4e7e51d455f5f4cfa38
+- 0.application app 入口文件优化：https://juejin.im/post/5b59a4e7e51d455f5f4cfa38 & https://github.com/ren93/initiator
 - 1.底部导航tabbar：https://github.com/tyzlmjj/PagerBottomTabStrip
 - 2.ViewPager: https://github.com/LuckyJayce/ViewPagerIndicator
 - 3.web浏览器：https://github.com/Justson/AgentWeb

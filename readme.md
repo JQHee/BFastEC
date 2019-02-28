@@ -114,7 +114,26 @@ ext {
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
-php提供的下载apk接口无法获取apk总大小的问题
+php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无法返回 Content-Length）
+1.Apache: httpd.conf  如果是虚拟服务服务器.htaccess
+```
+  <IfModule mod_deflate.c>
+   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript application/javascript application/json #对指定的内容进行压缩，压缩方式为默认的一个方法
+   SetEnvIfNoCase Request_URI .(?:gif|jpe?g|png)$ no-gzip dont-vary 
+   SetEnvIfNoCase Request_URI .(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary 
+   SetEnvIfNoCase Request_URI .(?:pdf|doc)$ no-gzip dont-vary
+  </IfModule>
+```
+2.nginx: 
+```
+    gzip  on;   #开启gzip
+    gzip_min_length 1k; #低于1kb的资源不压缩
+    gzip_comp_level 3; #压缩级别【1-9】，越大压缩率越高，同时消耗cpu资源也越多，建议设置在4左右。
+    gzip_types text/plain application/javascript application/x-javascript text/javascript text/xml text/css;  #需要压缩哪些响应类型的资源，多个空格隔开。不建议压缩图片，下面会讲为什么。
+    gzip_disable "MSIE [1-6]\.";  #配置禁用gzip条件，支持正则。此处表示ie6及以下不启用gzip（因为ie低版本不支持）
+    gzip_vary on;  #是否添加“Vary: Accept-Encoding”响应头
+```
+3.文件下载
 ```
     public  function  download() {
         $fileURL = ROOT_PATH."public/apk/test.apk";

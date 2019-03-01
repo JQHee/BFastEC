@@ -434,6 +434,8 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 11.打造输入自己的AS插件：https://www.jianshu.com/p/bf54eddfba6e
 - 12.欢迎页优化SplashFragment+StubView：https://www.jianshu.com/p/add0d4a03914 & https://blog.csdn.net/chenliguan/article/details/53997436 & 源码：https://github.com/kpioneer123/SplashOptimize
 - 13.图片文件目录drawable 和 mipmap 说明：https://www.jianshu.com/p/68ae4aa43648
+- 14.kotlin协程实现：https://github.com/Kotlin/kotlinx.coroutines
+- 15.java实现携程：https://github.com/puniverse/quasar
 
 
 #### 四、具有参考性的项目

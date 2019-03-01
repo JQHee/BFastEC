@@ -420,7 +420,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 
 
 #### 三、优化
-- 0.使用插件优化代码：https://www.jianshu.com/p/2b8d34b2267c
+- 0.使用插件优化代码：https://www.jianshu.com/p/2b8d34b2267c 、 FindBugs
 - 1.内测泄漏检测：https://github.com/square/leakcanary
 - 2.网络调试工具需要翻墙：https://github.com/facebook/stetho
 - 3.dex65535文件报错multidex：implementation 'com.android.support:multidex:1.0.1'

@@ -108,13 +108,10 @@ ext {
     commonLibs = commonDeps.values()
 }
 
-作者：iceCola7
-链接：https://juejin.im/post/5c69650051882562621736d7
-来源：掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ```
 
 php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无法返回 Content-Length）
+// 链接说明：https://blog.csdn.net/CodeTraveller/article/details/84850218
 1.Apache: httpd.conf  如果是虚拟服务服务器.htaccess
 ```
   <IfModule mod_deflate.c>

@@ -185,6 +185,10 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 通知某个方法的时间、调优：https://blog.csdn.net/wangwangli6/article/details/72820867
 - AOP切面编程项目包含登录、动态权限申请拦截：https://github.com/north2016/T-MVP
 - 比较简单的说明、参数说明：https://www.cnblogs.com/weizhxa/p/8567942.html
+- 动态权限申请：https://www.jianshu.com/p/babe2984140f
+
+##### 支付
+- 支付宝和微信支付：https://www.jianshu.com/p/032b5353a3f4
 
 ##### 框架
 - 0.application app 入口文件优化：https://juejin.im/post/5b59a4e7e51d455f5f4cfa38 & https://github.com/ren93/initiator
@@ -220,6 +224,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 4. 不得不知的自带组件： LiveData(时间总线，用法与Rxjava类似，也可使用Rxjava替代)、ViewModel(ViewModel 是一个框架组件。它为 UI 组件 (fragment或activity) 提供数据，并且可以调用其它组件加载数据或者转发用户指令。)、Room(持久化数据)  参考链接：https://www.jianshu.com/p/48df7dd49454
 - 5.组件化搭建: https://www.jianshu.com/p/8dddeef229f9
 - 6.kotlin: 实现组件化：https://juejin.im/post/5c69650051882562621736d7
+- 7.Kotlin+组件化项目：https://github.com/GraceJoJo/Designer
 
 ##### 使用引导
 - 1.NewbieGuide：https://github.com/huburt-Hu/NewbieGuide
@@ -247,6 +252,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 1.*工具库（支付、扫码、弹窗）： https://github.com/vondear/RxTool
 - 2.barcodescanner 封装有zbar(c语言)、zxing: https://github.com/dm77/barcodescanner
 - 3.BGAQRCode生成二维码、扫描二维码、识别图片二维码：https://github.com/bingoogolapple/BGAQRCode-Android
+- 4.二维码生成带LOGO: https://www.jianshu.com/p/b516221b6d6e
 
 
 ##### 动态权限
@@ -528,4 +534,10 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 
 #### 六、进阶
 - 1.Glide: 添加下载进度监听： https://www.jianshu.com/p/61a0761e6e81
+
+#### 七、面试
+- 1.Activity生命周期：https://www.jianshu.com/p/5b22e7d54614
+- 2.Fragment生命周期：https://www.jianshu.com/p/e8c7b9e33324
+- 3.jvm 原理
+- 4.Handle 原理
 

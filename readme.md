@@ -225,6 +225,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 5.组件化搭建: https://www.jianshu.com/p/8dddeef229f9
 - 6.kotlin: 实现组件化：https://juejin.im/post/5c69650051882562621736d7
 - 7.Kotlin+组件化项目：https://github.com/GraceJoJo/Designer
+- 8.项目组件化：https://blog.csdn.net/guiying712/article/details/55213884#1为什么要项目组件化 
 
 ##### 使用引导
 - 1.NewbieGuide：https://github.com/huburt-Hu/NewbieGuide

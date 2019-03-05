@@ -463,6 +463,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 9.6 AIDL 参数说明： https://github.com/lofiwang/lofiwang.github.io/wiki/Messenger
 - 9.7 AIDL 定时任务传递数据: https://github.com/CheaLiu/ServiceAidl
 - 9.8 AIDL 实现购买服务：https://www.cnblogs.com/xufengyuan/p/5997989.html
+- 9.9 AIDL 实现转账功能：https://www.jianshu.com/p/b8f129c2be20
 - 10.全面屏、刘海屏适配：https://blog.csdn.net/DJY1992/article/details/80689632  &   https://github.com/LuckyYangChen/AdaptNotch
 - 11.引导页制作：https://www.jianshu.com/p/adb21180862a
 - 12.LiveData 使用: https://github.com/SelfZhangTQ/T-MVVM

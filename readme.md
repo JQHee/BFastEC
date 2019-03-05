@@ -243,6 +243,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 3.XPopup: https://github.com/li-xiaojun/XPopup
 - 4.dialogplus: https://github.com/orhanobut/dialogplus
 - 5.小巧Dialog: https://github.com/kongzue/Dialog
+- 6.多种样式弹窗：https://github.com/hss01248/DialogUtil
 
 ##### 下载器
 - 1.Aria：https://github.com/AriaLyy/Aria
@@ -452,7 +453,9 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 6.通用的PopupWindow: https://github.com/crazyqiang/AndroidStudy
 - 7.建造者模式衍生的全局Dialog: https://github.com/YuanTiger/Design-Pattern/blob/master/app/src/main/java/com/my/designdemo/design/builder/dialog/DialogProduct.java
 - 8.tags: https://github.com/ithedan/CustomRadioGroupTag
-- 9.aidl 不同进程之间进行数据通信
+- 9.AIDL 不同进程之间进行数据通信 
+- 9.1 数据通信开发与应用序列文章：https://me.csdn.net/zhang_zxk
+- 9.2 AIDL：Demo实例说明 https://github.com/dengdaoyus/ddy-aidl-demo-master
 - 10.全面屏、刘海屏适配：https://blog.csdn.net/DJY1992/article/details/80689632  &   https://github.com/LuckyYangChen/AdaptNotch
 - 11.引导页制作：https://www.jianshu.com/p/adb21180862a
 - 12.LiveData 使用: https://github.com/SelfZhangTQ/T-MVVM

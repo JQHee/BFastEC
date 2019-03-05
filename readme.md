@@ -447,7 +447,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 0.AOP切面编程项目：https://github.com/north2016/T-MVP
 - 1.今日头条RxJava + Retrofit + MVP：https://github.com/chaychan/TouTiao
 - 2.足球项目RxJava+Retrofit+MVP：https://github.com/wangjian1154/FootballApp
-- 3.*新闻类很好的mvp架构MVP + RxJava + Retrofit+ARouter+Dagger2：https://github.com/Peakmain/gankzhihu
+- 3.*新闻类很好的mvp架构 AIDL: MVP + RxJava + Retrofit+ARouter+Dagger2：https://github.com/Peakmain/gankzhihu
 - 4.DialogFragment弹窗封装：https://github.com/developerHaoz/DialogFragmentDemos
 - 5.万能的Dialog：https://github.com/AnthonyCoder/PowerfulDialog
 - 6.通用的PopupWindow: https://github.com/crazyqiang/AndroidStudy
@@ -456,6 +456,8 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 9.AIDL 不同进程之间进行数据通信 
 - 9.1 数据通信开发与应用序列文章：https://me.csdn.net/zhang_zxk
 - 9.2 AIDL：Demo实例说明 https://github.com/dengdaoyus/ddy-aidl-demo-master
+- 9.3 AIDL简单理解：https://github.com/duckAndroid/-android-aidl-/wiki/android-aidl-从懵逼开始  & https://github.com/duckAndroid/-android-aidl-/wiki/android-aidl-继懵逼之后
+- 9.4 AIDL跨进程通信总结：https://github.com/bei1999/work/wiki/跨进程通讯之AIDL总结实现
 - 10.全面屏、刘海屏适配：https://blog.csdn.net/DJY1992/article/details/80689632  &   https://github.com/LuckyYangChen/AdaptNotch
 - 11.引导页制作：https://www.jianshu.com/p/adb21180862a
 - 12.LiveData 使用: https://github.com/SelfZhangTQ/T-MVVM

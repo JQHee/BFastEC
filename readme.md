@@ -276,6 +276,8 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 2.MultipleStatusView：https://github.com/qyxxjd/MultipleStatusView
 - 3.多状态view: https://github.com/nukc/StateView
 
+##### 日志写法方案
+- 1.日志写入：https://github.com/MuBob/PhoneLogUtil
 
 ##### 刷新框架：
 - 1.smartrefresh：https://github.com/scwang90/SmartRefreshLayout

@@ -274,6 +274,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 ##### 多状态提示
 - 1.stateView: https://github.com/vlonjatg/progress-activity.git
 - 2.MultipleStatusView：https://github.com/qyxxjd/MultipleStatusView
+- 3.多状态view: https://github.com/nukc/StateView
 
 
 ##### 刷新框架：

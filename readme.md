@@ -186,6 +186,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - AOP切面编程项目包含登录、动态权限申请拦截：https://github.com/north2016/T-MVP
 - 比较简单的说明、参数说明：https://www.cnblogs.com/weizhxa/p/8567942.html
 - 动态权限申请：https://www.jianshu.com/p/babe2984140f
+- 淘宝京东网络处理：https://www.jianshu.com/p/890dd0b77ded
 
 ##### 支付
 - 支付宝和微信支付：https://www.jianshu.com/p/032b5353a3f4
@@ -226,6 +227,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 6.kotlin: 实现组件化：https://juejin.im/post/5c69650051882562621736d7
 - 7.Kotlin+组件化项目：https://github.com/GraceJoJo/Designer
 - 8.项目组件化：https://blog.csdn.net/guiying712/article/details/55213884#1为什么要项目组件化 
+- 9.模块组件化：https://www.jianshu.com/p/33ce973fec95
 
 ##### 使用引导
 - 1.NewbieGuide：https://github.com/huburt-Hu/NewbieGuide
@@ -445,6 +447,7 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 14.kotlin协程实现：https://github.com/Kotlin/kotlinx.coroutines
 - 15.java实现协程：https://github.com/puniverse/quasar & https://github.com/kilim/kilim
 - 16.应用保活：拥有`android:persistent=true`属性的app将不能被kill或kill后会自动重启。
+- 17.xml中的共享元素实现：https://www.jianshu.com/p/3d432402448e
 
 
 #### 四、具有参考性的项目
@@ -472,6 +475,8 @@ php提供的下载apk接口无法获取apk总大小的问题（gzip 导致 无�
 - 12.LiveData 使用: https://github.com/SelfZhangTQ/T-MVVM
 - 13.kotlin学习项目: https://github.com/iceCola7/WanAndroid
 - 14.本地文件ppt等文件浏览：https://github.com/sky8650/TbsForOffice
+- 15.第三方框架大集合：https://www.jianshu.com/p/101956ecd36c
+- 16.TCP和UDP的实现： https://www.jianshu.com/p/f4a60bb8dfab
 
 
 #### 五、适配
@@ -534,6 +539,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 
 ##### android 6.0适配
 - 1.动态权限申请适配
+- 2.Android6.0到9.0的爬坑指南：https://www.jianshu.com/p/81b498e765d5
 
 ##### 软键盘适配
 - 1.几种键盘遮挡输入框的适配方案：https://www.jianshu.com/p/ac7063e23b93
@@ -555,4 +561,5 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - 2.Fragment生命周期：https://www.jianshu.com/p/e8c7b9e33324
 - 3.jvm 原理
 - 4.Handle 原理
+- 5.序列化：https://www.jianshu.com/p/5b7037d1427b
 

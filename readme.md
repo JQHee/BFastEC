@@ -594,3 +594,4 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - mp3转码库：https://blog.csdn.net/google_acmer/article/details/80002476
 - Android NDK开发之旅37--FFmpeg转码压缩： https://www.jianshu.com/p/32ec9d33d214
 - Android NDK开发之旅35--NDK-做个直播SDK： https://www.jianshu.com/p/0a122c1d5953
+- curl: https://blog.csdn.net/csdn49532/article/details/50680716

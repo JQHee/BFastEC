@@ -595,3 +595,4 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - Android NDK开发之旅37--FFmpeg转码压缩： https://www.jianshu.com/p/32ec9d33d214
 - Android NDK开发之旅35--NDK-做个直播SDK： https://www.jianshu.com/p/0a122c1d5953
 - curl: https://blog.csdn.net/csdn49532/article/details/50680716
+- Android使用OpenGL ES显示纹理(使用NDK开发）: https://blog.csdn.net/a568478312/article/details/80426563

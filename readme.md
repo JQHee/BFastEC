@@ -588,3 +588,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - android ndk之libjpge.so 压缩图片： https://www.jianshu.com/p/a4f3aa503f0e
 - 实战： https://www.jianshu.com/p/c32132784392
 - 端口扫描：https://www.cnblogs.com/makefile/p/3970371.html
+- 获取设备信息：https://blog.csdn.net/dear_qiao/article/details/78133310
+- 获取唯一标识：https://blog.csdn.net/dashewan11111/article/details/82379019?utm_source=blogxgwz7
+- Android Studio 基于NDK加密，防止反编译获取加密key： https://blog.csdn.net/u012927188/article/details/52638951
+- mp3转码库：https://blog.csdn.net/google_acmer/article/details/80002476
+- Android NDK开发之旅37--FFmpeg转码压缩： https://www.jianshu.com/p/32ec9d33d214

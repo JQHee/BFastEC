@@ -593,3 +593,4 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - Android Studio 基于NDK加密，防止反编译获取加密key： https://blog.csdn.net/u012927188/article/details/52638951
 - mp3转码库：https://blog.csdn.net/google_acmer/article/details/80002476
 - Android NDK开发之旅37--FFmpeg转码压缩： https://www.jianshu.com/p/32ec9d33d214
+- Android NDK开发之旅35--NDK-做个直播SDK： https://www.jianshu.com/p/0a122c1d5953

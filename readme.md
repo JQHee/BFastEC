@@ -585,3 +585,4 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - jni日志打印：https://www.cnblogs.com/MMLoveMeMM/articles/3606647.html
 - socket: https://www.jianshu.com/p/65d0984779c4
 - 增量更新：https://www.jianshu.com/p/20246e211c76
+- android ndk之libjpge.so 压缩图片： https://www.jianshu.com/p/a4f3aa503f0e

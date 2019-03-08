@@ -570,3 +570,4 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 
 #### 九、NDK环境安装
 - https://blog.csdn.net/FRYAN28/article/details/85009634
+- 生成so: https://blog.csdn.net/b2259909/article/details/58591898

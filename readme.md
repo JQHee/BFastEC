@@ -582,7 +582,9 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - 人脸识别：https://blog.csdn.net/a992036795/article/details/53200353
 - jni异常处理：https://blog.csdn.net/u013718120/article/details/65629074
 - 文件加解密：https://blog.csdn.net/qq_37475168/article/details/80405685
-- jni日志打印：https://www.cnblogs.com/MMLoveMeMM/articles/3606647.html
+- jni日志打印：https://www.cnblogs.com/MMLoveMeMM/articles/3606647.html & https://www.jianshu.com/p/464cd879eaba
 - socket: https://www.jianshu.com/p/65d0984779c4
 - 增量更新：https://www.jianshu.com/p/20246e211c76
 - android ndk之libjpge.so 压缩图片： https://www.jianshu.com/p/a4f3aa503f0e
+- 实战： https://www.jianshu.com/p/c32132784392
+- 端口扫描：https://www.cnblogs.com/makefile/p/3970371.html

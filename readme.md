@@ -571,6 +571,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 #### 九、NDK环境安装
 - https://blog.csdn.net/FRYAN28/article/details/85009634
 - 生成so: https://blog.csdn.net/b2259909/article/details/58591898
+- so类型打包：https://www.cnblogs.com/guiqw/p/5108740.html
 - 图片处理：https://www.cnblogs.com/mingfeng002/p/6542652.html
 - openVC: https://www.jianshu.com/p/c29bb20908da
 - 相机：https://blog.csdn.net/u010677365/article/details/78344202
@@ -582,3 +583,5 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - jni异常处理：https://blog.csdn.net/u013718120/article/details/65629074
 - 文件加解密：https://blog.csdn.net/qq_37475168/article/details/80405685
 - jni日志打印：https://www.cnblogs.com/MMLoveMeMM/articles/3606647.html
+- socket: https://www.jianshu.com/p/65d0984779c4
+- 增量更新：https://www.jianshu.com/p/20246e211c76

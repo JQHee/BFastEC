@@ -562,4 +562,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 - 3.jvm 原理
 - 4.Handle 原理
 - 5.序列化：https://www.jianshu.com/p/5b7037d1427b
+- 6.高级面试IPC: https://www.jianshu.com/p/53174e9a830c
 
+#### 八、串口通信
+- 1.Android基于蓝牙串口编程实现HC-05通讯： https://www.jianshu.com/p/94181714390d
+- 2.Android串口盒子+扫码枪开发： https://www.jianshu.com/p/02938fa5be66
+
+#### 九、NDK环境安装
+- https://blog.csdn.net/FRYAN28/article/details/85009634

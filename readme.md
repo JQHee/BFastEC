@@ -571,3 +571,14 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 #### 九、NDK环境安装
 - https://blog.csdn.net/FRYAN28/article/details/85009634
 - 生成so: https://blog.csdn.net/b2259909/article/details/58591898
+- 图片处理：https://www.cnblogs.com/mingfeng002/p/6542652.html
+- openVC: https://www.jianshu.com/p/c29bb20908da
+- 相机：https://blog.csdn.net/u010677365/article/details/78344202
+- 音视频：https://www.jianshu.com/p/39e2f29e3454
+- AES加解密：https://blog.csdn.net/weizongwei5/article/details/54312340 & https://www.cnblogs.com/kolin/p/4256614.html
+- DES加密：https://blog.csdn.net/xuyankuanrong/article/details/79020443
+- RSA加密：https://blog.csdn.net/omnispace/article/details/79788550
+- 人脸识别：https://blog.csdn.net/a992036795/article/details/53200353
+- jni异常处理：https://blog.csdn.net/u013718120/article/details/65629074
+- 文件加解密：https://blog.csdn.net/qq_37475168/article/details/80405685
+- jni日志打印：https://www.cnblogs.com/MMLoveMeMM/articles/3606647.html
